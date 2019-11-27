@@ -104,6 +104,8 @@ import Textarea from "./packages/textarea/index.js";
 import Calendarrow from "./packages/calendarrow/index.js";
 import Foldlist from "./packages/foldlist/index.js";
 import Infolist from "./packages/infolist/index.js"; 
+import Lazyload from "./packages/lazyload/index.js";
+
 
 const packages = {
   Infolist,
@@ -174,7 +176,6 @@ const directives = {};
 pkgList.map(item => {
   const pkg = packages[item.name];
   if (!pkg) return;
-
   if (item.type == 'component') {
     if (pkg.name) {
       components[pkg.name] = pkg;
@@ -227,6 +228,11 @@ const install = function (Vue, opts = {}) {
       Vue.directive(directives[cptName].name, directives[cptName]);
     }
   }
+
+  Vue.use(Lazyload, {
+    lazyComponent: true,
+    loading: '//img12.360buyimg.com/imagetools/jfs/t1/73967/28/14561/916/5dc142e4E0666555b/bf33454553c6035e.png'
+  });
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
@@ -237,6 +243,7 @@ export default {
   version,
   locale,
   install,
+  Lazyload,
   ...components,
   ...filters,
   ...directives,
