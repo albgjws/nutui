@@ -3,9 +3,11 @@
         :class="[direction,{'dragging':dragging}]"
         @touchstart = "_onTouchStart($event)"
         @mousedown = "_onTouchStart($event)"
+        :style="{ height: height + 'px'}" 
     >
         <div class="nut-swiper-wrap"
             :style="{
+                'height': height + 'px', 
                 'transform':'translate3d('+translateX+'px,'+translateY+'px,0)',
                 'transition-duration':transitionDuration+'ms',
                 '-webkit-transform':'translate3d('+translateX+'px,'+translateY+'px,0)',
@@ -34,6 +36,10 @@ const HORIZONTAL = 'horizontal';
 export default {
     name:"nut-swiper",
     props:{
+        height: {
+            type: [Number, String],
+            default: 200
+        },
         direction:{
             type:String,
             default:HORIZONTAL,

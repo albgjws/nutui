@@ -9,6 +9,156 @@
   ],
   "packages": [
     {
+      "name": "Infolist",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "信息列表",
+      "type": "component",
+      "showDemo": true,
+      "desc": "信息列表",
+      "author": "Ryan"
+    },
+    {
+      "name": "Foldlist",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "折叠列表",
+      "type": "component",
+      "showDemo": true,
+      "desc": "折叠列表",
+      "author": "Ryan"
+    },
+    {
+      "name": "Calendarrow",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "横向日历",
+      "type": "component",
+      "showDemo": false,
+      "desc": "横向日历",
+      "author": "Ryan"
+    },
+    {
+      "name": "Textarea",
+      "version": "1.0.0",
+      "sort": "2",
+      "chnName": "文本域",
+      "type": "component",
+      "showDemo": true,
+      "desc": "文本域",
+      "author": "Ryan"
+    },
+    {
+      "name": "Textfield",
+      "version": "1.0.0",
+      "sort": "2",
+      "chnName": "普通输入框",
+      "type": "component",
+      "showDemo": true,
+      "desc": "普通输入框",
+      "author": "Ryan"
+    },
+    {
+      "name": "Passwordfield",
+      "version": "1.0.0",
+      "sort": "2",
+      "chnName": "密码输入框",
+      "type": "component",
+      "showDemo": true,
+      "desc": "密码输入框",
+      "author": "Ryan"
+    },
+    {
+      "name": "Numberfield",
+      "version": "1.0.0",
+      "sort": "2",
+      "chnName": "数字/货币输入框",
+      "type": "component",
+      "showDemo": true,
+      "desc": "数字/货币输入框",
+      "author": "Ryan"
+    },
+    {
+      "name": "Captchafield",
+      "version": "1.0.0",
+      "sort": "2",
+      "chnName": "验证码",
+      "type": "component",
+      "showDemo": true,
+      "desc": "验证码",
+      "author": "Ryan"
+    },
+    {
+      "name": "Swiperfull",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "幻灯片",
+      "type": "component",
+      "showDemo": true,
+      "desc": "幻灯片",
+      "author": "Ryan"
+    },
+    {
+      "name": "Popup",
+      "version": "1.0.0",
+      "sort": "5",
+      "chnName": "弹层",
+      "type": "component",
+      "showDemo": true,
+      "desc": "弹层",
+      "author": "Ryan"
+    },
+    {
+      "name": "Grid",
+      "version": "1.0.0",
+      "sort": "5",
+      "chnName": "网格",
+      "type": "component",
+      "showDemo": true,
+      "desc": "网格",
+      "author": "Ryan"
+    },
+    {
+      "name": "Mask",
+      "version": "1.0.0",
+      "sort": "5",
+      "chnName": "遮罩弹层",
+      "type": "component",
+      "showDemo": true,
+      "desc": "遮罩弹层",
+      "author": "Ryan"
+    },
+    {
+      "name": "Overlay",
+      "version": "1.0.0",
+      "sort": "5",
+      "chnName": "蒙层",
+      "type": "component",
+      "showDemo": true,
+      "desc": "蒙层",
+      "author": "Ryan"
+    },
+    {
+      "name": "Gridselect",
+      "version": "1.0.0",
+      "sort": "1",
+      "chnName": "多格筛选",
+      "type": "component",
+      "showDemo": true,
+      "desc": "密码键盘",
+      "author": "Ryan"
+    },
+    {
+      "name": "Keyboard",
+      "version": "1.0.0",
+      "sort": "2",
+      "chnName": "密码键盘",
+      "type": "component",
+      "showDemo": true,
+      "desc": "密码键盘",
+      "author": "Ryan"
+    },
+    {
       "name": "Cell",
       "version": "1.0.0",
       "sort": "4",

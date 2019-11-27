@@ -5,10 +5,9 @@
             :paginationVisibile="true"
             direction="horizontal"
             ref="demo1"
-            
         >
            <div  v-for="(item,index) in dataImgItem" :key="index"  class="nut-swiper-slide ">
-                <img :src="item.imgSrc"   style="max-width:100%;"/> 
+                <img :src="item.imgSrc"   style="width:100%; height:100%;"/> 
             </div>
 
         </nut-swiper>
@@ -23,7 +22,7 @@
             
         >
              <div  v-for="(item,index) in dataImgItem" :key="index"  class="nut-swiper-slide ">
-                <img :src="item.imgSrc"   style="max-width:100%;" /> 
+                <img :src="item.imgSrc"   style="width:100%; height:100%;" /> 
             </div>
 
         </nut-swiper>
@@ -39,7 +38,7 @@
             
         >
              <div  v-for="(item,index) in dataImgItem" :key="index"  class="nut-swiper-slide ">
-                <img :src="item.imgSrc"   style="max-width:100%;" /> 
+                <img :src="item.imgSrc"   style="width:100%; height:100%;" /> 
             </div>
 
 
@@ -52,7 +51,7 @@
             :autoPlay="3000"
         >
              <div  v-for="(item,index) in dataImgItem" :key="index"  class="nut-swiper-slide ">
-                <img :src="item.imgSrc"   style="max-width:100%;" /> 
+                <img :src="item.imgSrc"   style="width:100%; height:100%;" /> 
             </div>
         </nut-swiper>
 
@@ -67,7 +66,7 @@
              @slideChangeStart="slideChangeStart"
         >
              <div  v-for="(item,index) in dataImgItem" :key="index"  class="nut-swiper-slide ">
-                <img :data-src="item.imgSrc"  style="max-width:100%;" class="nut-img-lazyload"/> 
+                <img :data-src="item.imgSrc"  style="width:100%; height:100%;" class="nut-img-lazyload"/> 
             </div>
 
         </nut-swiper>

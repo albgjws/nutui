@@ -89,8 +89,38 @@ import TextInput from "./packages/textinput/index.js";
 import "./packages/textinput/textinput.scss";
 import Avatar from "./packages/avatar/index.js";
 import "./packages/avatar/avatar.scss";
+import Keyboard from "./packages/keyboard/index.js";
+import Gridselect from "./packages/gridselect/index.js"; 
+import Overlay from "./packages/overlay/index.js"; 
+import Mask from "./packages/mask/index.js"; 
+import Grid from "./packages/grid/index.js"; 
+import Popup from "./packages/popup/index.js"; 
+import Swiperfull from "./packages/swiperfull/index.js"; 
+import Captchafield from "./packages/captchafield/index.js"; 
+import Numberfield from "./packages/numberfield/index.js"; 
+import Passwordfield from "./packages/passwordfield/index.js"; 
+import Textfield from "./packages/textfield/index.js"; 
+import Textarea from "./packages/textarea/index.js";
+import Calendarrow from "./packages/calendarrow/index.js";
+import Foldlist from "./packages/foldlist/index.js";
+import Infolist from "./packages/infolist/index.js"; 
 
 const packages = {
+  Infolist,
+  Foldlist,
+  Calendarrow,
+  Textarea,
+  Textfield,
+  Passwordfield,
+  Numberfield,
+  Captchafield,
+  Swiperfull,
+  Popup,
+  Grid,
+  Mask,
+  Overlay,
+  Gridselect,
+  Keyboard,
   Cell,
   Dialog,
   Icon,

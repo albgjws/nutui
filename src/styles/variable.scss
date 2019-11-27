@@ -1,5 +1,5 @@
 // ---- color ----
-$primary-color: #F0250F !default;
+$primary-color: #0785DB !default;
 $normal-color: #848484 !default;
 $link-color: $primary-color !default;
 $link-hover-color: mix($link-color, #000, 80%) !default;
@@ -67,8 +67,8 @@ $btn-menu-height: 50px !default;
 $btn-primary-color: #FFF !default;
 $btn-primary-bg: $primary-color !default;
 $btn-gradient-color: #FFF !default;
-$btn-gradient-start-color: #ff4f18;
-$btn-gradient-end-color: #f20000;
+$btn-gradient-start-color: #399DE2;
+$btn-gradient-end-color: #0785DB;
 $btn-gradient-bg: linear-gradient(315deg, $btn-gradient-start-color 0%, $btn-gradient-end-color 100%) !default;
 $btn-gradient-active-bg: linear-gradient(315deg, darken($btn-gradient-start-color, 10%) 0%, darken($btn-gradient-end-color, 10%) 100%) !default;
 $btn-default-color: $normal-color !default;
