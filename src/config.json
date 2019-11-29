@@ -9,6 +9,56 @@
   ],
   "packages": [
     {
+      "name": "Processrow",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "横向流程条",
+      "type": "component",
+      "showDemo": true,
+      "desc": "横向流程条",
+      "author": "Ryan"
+    },
+    {
+      "name": "Process",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "流程条",
+      "type": "component",
+      "showDemo": true,
+      "desc": "流程条",
+      "author": "Ryan"
+    },
+    {
+      "name": "Marquee",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "跑马灯",
+      "type": "component",
+      "showDemo": true,
+      "desc": "跑马灯",
+      "author": "Ryan"
+    },
+    {
+      "name": "Loading",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "加载",
+      "type": "component",
+      "showDemo": true,
+      "desc": "加载",
+      "author": "Ryan"
+    },
+    {
+      "name": "Lazyrender",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "懒加载",
+      "type": "component",
+      "showDemo": true,
+      "desc": "懒加载",
+      "author": "Ryan"
+    },
+    {
       "name": "Infolist",
       "version": "1.0.0",
       "sort": "0",

@@ -105,9 +105,21 @@ import Calendarrow from "./packages/calendarrow/index.js";
 import Foldlist from "./packages/foldlist/index.js";
 import Infolist from "./packages/infolist/index.js"; 
 import Lazyload from "./packages/lazyload/index.js";
+import Lazyrender from "./packages/lazyrender/index.js";
+import Loading from "./packages/loading/index.js";
+import Partloading from "./packages/partloading/index.js";
+import Marquee from "./packages/marquee/index.js";
+import Process from "./packages/process/index.js";
+import Processrow from "./packages/processrow/index.js";
 
 
 const packages = {
+  Processrow,
+  Process,
+  Marquee,
+  Partloading,
+  Loading,
+  Lazyrender,
   Infolist,
   Foldlist,
   Calendarrow,
