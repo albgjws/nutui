@@ -1,6 +1,5 @@
 <template>
   <div class="wxc-demo">
-    <!-- <scroller class="scroller"> -->
       <lc-title title="多格筛选"></lc-title>
 
       <category title="单选"></category>
@@ -41,7 +40,6 @@
 
         <p class="res">{{res3}}</p>
       </div>
-    <!-- </scroller> -->
   </div>
 </template>
 
@@ -70,11 +68,8 @@
 
 <script>
 
-  // import LcGridSelect from 'lighting-ui/packages/nut-grid-select';
   import LcTitle from '../../packages/_mods/title.vue';
   import Category from '../../packages/_mods/category.vue';
-  // import Light from 'light';
-  // const modal = Light.requireModule('modal');
 
   export default {
     components: { LcTitle, Category},

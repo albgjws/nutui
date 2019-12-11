@@ -111,9 +111,19 @@ import Partloading from "./packages/partloading/index.js";
 import Marquee from "./packages/marquee/index.js";
 import Process from "./packages/process/index.js";
 import Processrow from "./packages/processrow/index.js";
+import Result from "./packages/result/index.js";
+import Tag from "./packages/tag/index.js";
+import TagWall from "./packages/tagwall/index.js";
+import Bank from "./packages/bank/index.js";
+import Mapcity from "./packages/mapcity/index.js";
 
 
 const packages = {
+  Mapcity,
+  Bank,
+  TagWall,
+  Tag,
+  Result,
   Processrow,
   Process,
   Marquee,

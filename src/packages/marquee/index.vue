@@ -39,7 +39,9 @@
             },500)},
 
             marqueeClick(i){
-                window.location.href=i 
+                if(i){
+                    window.location.href=i 
+                }
             }
         }
     };

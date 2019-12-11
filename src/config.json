@@ -9,6 +9,56 @@
   ],
   "packages": [
     {
+      "version": "1.0.0",
+      "name": "Mapcity",
+      "sort": "2",
+      "chnName": "地图",
+      "desc": "地图",
+      "type": "component",
+      "showDemo": true,
+      "author": "Ryan"
+    },
+    {
+      "version": "1.0.0",
+      "name": "Bank",
+      "sort": "2",
+      "chnName": "银行卡列表",
+      "desc": "银行卡列表",
+      "type": "component",
+      "showDemo": true,
+      "author": "Ryan"
+    },
+    {
+      "name": "Tagwall",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "标签墙",
+      "type": "component",
+      "showDemo": true,
+      "desc": "标签墙",
+      "author": "Ryan"
+    },
+    {
+      "name": "Tag",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "标签",
+      "type": "component",
+      "showDemo": true,
+      "desc": "标签",
+      "author": "Ryan"
+    },
+    {
+      "name": "Result",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "结果页",
+      "type": "component",
+      "showDemo": true,
+      "desc": "结果页",
+      "author": "Ryan"
+    },
+    {
       "name": "Processrow",
       "version": "1.0.0",
       "sort": "0",
