@@ -10,6 +10,36 @@
   "packages": [
     {
       "version": "1.0.0",
+      "name": "Tabgroup",
+      "sort": "2",
+      "chnName": "页签组",
+      "desc": "页签组",
+      "type": "component",
+      "showDemo": true,
+      "author": "Ryan"
+    },
+    {
+      "version": "1.0.0",
+      "name": "Swipecell",
+      "sort": "2",
+      "chnName": "滑动菜单",
+      "desc": "滑动菜单",
+      "type": "component",
+      "showDemo": true,
+      "author": "Ryan"
+    },
+    {
+      "version": "1.0.0",
+      "name": "Popover",
+      "sort": "2",
+      "chnName": "气泡弹层",
+      "desc": "气泡弹层",
+      "type": "component",
+      "showDemo": true,
+      "author": "Ryan"
+    },
+    {
+      "version": "1.0.0",
       "name": "Mapcity",
       "sort": "2",
       "chnName": "地图",

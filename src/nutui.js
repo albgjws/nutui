@@ -116,9 +116,15 @@ import Tag from "./packages/tag/index.js";
 import TagWall from "./packages/tagwall/index.js";
 import Bank from "./packages/bank/index.js";
 import Mapcity from "./packages/mapcity/index.js";
+import Popover from "./packages/popover/index.js";
+import Swipecell from "./packages/swipecell/index.js";
+import Tabgroup from "./packages/tabgroup/index.js";
 
 
 const packages = {
+  Tabgroup,
+  Swipecell,
+  Popover,
   Mapcity,
   Bank,
   TagWall,

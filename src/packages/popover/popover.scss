@@ -1,0 +1,101 @@
+@import "../../styles/animation/slide-up";
+@import "../../styles/animation/slide-right";
+@import "../../styles/animation/slide-down";
+@import "../../styles/animation/slide-left";
+
+@keyframes nutSlideDownIn {
+    from {
+        transform: translate3d(0, -10%, 0);
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@keyframes nutSlideDownOut {
+    from {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    to {
+        visibility: hidden;
+        transform: translate3d(0, -10%, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes nutSlideLeftIn{
+    from {
+        transform: translate3d(-10%, 0, 0);
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes nutSlideLeftOut{
+    from {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    to {
+        visibility: hidden;
+        transform: translate3d(-10%, 0, 0);
+        opacity: 0;
+    }
+}   
+
+@-webkit-keyframes nutSlideRightIn{
+    from {
+        transform: translate3d(10%, 0, 0);
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes nutSlideRightOut{
+    from {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    to {
+        visibility: hidden;
+        transform: translate3d(10%, 0, 0);
+        opacity: 0;
+    } 
+}  
+
+@keyframes nutSlideUpIn {
+    from {
+        transform: translate3d(0, 10%, 0);
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@keyframes nutSlideUpOut {
+    from {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    to {
+        visibility: hidden;
+        transform: translate3d(0, 10%, 0);
+        opacity: 0;
+    }
+}
+
+@include make-animation(nutSlideUp, $ease-in-out);
+@include make-animation(nutSlideRight);
+@include make-animation(nutSlideLeft);
+@include make-animation(nutSlideDown);

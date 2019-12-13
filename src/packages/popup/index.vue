@@ -3,7 +3,6 @@
     <nut-overlay :show="show&&haveOverlay"
                   ref="overlay"
                   v-bind="overlayCfg"
-                  :can-auto-close="overlayCanClose"
                   @LcOverlayBodyClicked="LcOverlayBodyClicked"></nut-overlay>
     <transition :name="transition">
       <div ref="lc-popup" @scroll.prevent
