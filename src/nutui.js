@@ -119,9 +119,11 @@ import Mapcity from "./packages/mapcity/index.js";
 import Popover from "./packages/popover/index.js";
 import Swipecell from "./packages/swipecell/index.js";
 import Tabgroup from "./packages/tabgroup/index.js";
+import Epslider from "./packages/epslider/index.js";
 
 
 const packages = {
+  Epslider,
   Tabgroup,
   Swipecell,
   Popover,

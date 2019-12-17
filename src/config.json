@@ -10,6 +10,16 @@
   "packages": [
     {
       "version": "1.0.0",
+      "name": "Epslider",
+      "sort": "2",
+      "chnName": "滑动切换",
+      "desc": "滑动切换",
+      "type": "component",
+      "showDemo": false,
+      "author": "Ryan"
+    },
+    {
+      "version": "1.0.0",
       "name": "Tabgroup",
       "sort": "2",
       "chnName": "页签组",
