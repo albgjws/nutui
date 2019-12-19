@@ -4,11 +4,11 @@
       <lc-title title="遮罩弹层" class="title"></lc-title>
       <category title="使用案例"></category>
       <div class="button-list">
-        <nut-button class="btn-margin" @click="openMask">点击弹出动画面板</nut-button>
-        <nut-button class="btn-margin" @click="openNoAnimationMask">点击弹出无动画面板</nut-button>
+        <lc-button class="btn-margin" @click="openMask">点击弹出动画面板</lc-button>
+        <lc-button class="btn-margin" @click="openNoAnimationMask">点击弹出无动画面板</lc-button>
       </div>
       
-      <nut-mask height="300"
+      <lc-mask height="300"
                 width="300"
                 border-radius="10"
                 opacity="0.6"
@@ -27,7 +27,7 @@
             HTML、CSS、JavaScript 可以构建原生应用，上手非常简单。但实际上，应用的底层是 Objective-C 或 Java， 同时，LightingUI 提供很多 native
             组件或模块供开发人员使用。 </p>
         </div>
-      </nut-mask>
+      </lc-mask>
   </div>
 </template>
 

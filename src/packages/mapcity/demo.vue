@@ -1,6 +1,6 @@
 <template>
   <div class="wxc-demo">
-    <lc-title title="nut-map-city"></lc-title>
+    <lc-title title="地图组件"></lc-title>
 
     <category title="地图组件"></category>
     <div class="map-wrap">
@@ -15,13 +15,13 @@
         <input type="text" placeholder="搜索" class="input" v-model="searchValue" />
         <span class="confirm" @click="searchLocation">确定</span>
     </div>
-    <nut-map-city ref="map" :mapHeight="300" 
+    <lc-map-city ref="map" :mapHeight="300" 
         @getAddInfo="getAddInfo" 
         @getNearby="getNearby" 
         @locatedStatus="locatedStatus" 
         :searchRadius="800" 
         :intervalTime="10000">
-    </nut-map-city>  
+    </lc-map-city>  
 
     <div class="result-wrap">
       <div v-for="(v,i) in result" :key="i">

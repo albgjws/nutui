@@ -51,7 +51,7 @@
 <script>
 import Item from './item.vue';
 export default {
-  name: 'nutTagWall',
+  name: 'nut-tag-wall',
   components: { Item },
   props: {
     list: {

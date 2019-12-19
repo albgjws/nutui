@@ -1,5 +1,6 @@
 // ---- color ----
 $primary-color: #0785DB !default;
+$red-color: #f0250f !default;
 $normal-color: #848484 !default;
 $link-color: $primary-color !default;
 $link-hover-color: mix($link-color, #000, 80%) !default;
@@ -42,6 +43,7 @@ $border-color-dark: #ABABAB !default;
 $border-width-base: 1px !default;
 $border-style-base: solid !default;
 $border-color-active: $primary-color !default;
+$border-color-active-red: $red-color !default;
 // ---- Disabled ----
 $disabled-color: #F6F6F6 !default;
 $disabled-bg: #DADADA !default;
@@ -81,7 +83,7 @@ $btn-disable-color: $disabled-color !default;
 $btn-disable-bg: $disabled-bg !default;
 $btn-disable-border: $disabled-color !default;
 $btn-icon-margin: 5px;
-$btn-label-light-bg: rgba(240, 37, 15, .05);
+$btn-label-light-bg: rgba(7, 133, 219, .05);
 // ---- z-index ----
 $zindex-mask: 9998 !default;
 $zindex-actionsheet: 10001 !default;

@@ -3,13 +3,13 @@
       
       <lc-title title="流程条"></lc-title>
       <category title="普通状态"></category>
-      <nut-process :processList="processList"></nut-process>
+      <lc-process :processList="processList"></lc-process>
       <category title="错误状态"></category>
-      <nut-process :processList="processList1"></nut-process>
+      <lc-process :processList="processList1"></lc-process>
       <category title="取消状态"></category>
-      <nut-process :processList="processList2"></nut-process>
+      <lc-process :processList="processList2"></lc-process>
       <category title="金钱状态"></category>
-      <nut-process :processList="processList3"></nut-process>
+      <lc-process :processList="processList3"></lc-process>
       
   </div>
 </template>

@@ -7,7 +7,7 @@
     <div class="container">
 
       <div class="form">
-        <nut-captchafield ref="input" :time=30 @sendCaptcha="sendHandler"></nut-captchafield>
+        <lc-captchafield ref="input" :time=30 @sendCaptcha="sendHandler"></lc-captchafield>
       </div>
 
     </div>

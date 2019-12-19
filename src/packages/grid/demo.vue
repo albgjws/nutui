@@ -3,13 +3,13 @@
   <div class="demo">
       <lc-title title="网格"></lc-title>
       <category title="默认3列"></category>
-      <nut-grid :list="all" @itemClicked="clickHandler1"></nut-grid>
+      <lc-grid :list="all" @itemClicked="clickHandler1"></lc-grid>
 
       <category title="自定义列"></category>
-      <nut-grid :cols="5" :list="text" @itemClicked="clickHandler2"></nut-grid>
+      <lc-grid :cols="5" :list="text" @itemClicked="clickHandler2"></lc-grid>
 
       <category title="可有网格"></category>
-      <nut-grid :cols="4" :list="img" :border="true" @itemClicked="clickHandler3"></nut-grid>
+      <lc-grid :cols="4" :list="img" :border="true" @itemClicked="clickHandler3"></lc-grid>
 
   </div>
 </template>

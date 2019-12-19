@@ -52,7 +52,7 @@
     <p>不也就只是就只是</p>
     <p>回首时</p>
     <p>那短短的一瞬</p>
-    <nut-backtop @click="handleClick"></nut-backtop>
+    <lc-backtop @click="handleClick"></lc-backtop>
   </div>
 </template>
 

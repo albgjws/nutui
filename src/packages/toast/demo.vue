@@ -2,12 +2,12 @@
   <div class="demo-list">
     <h4>基本用法</h4>
     <div>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="textToast1('我只传了文案一个参数')">
+      <lc-cell :showIcon="true" :isLink="true" @click.native="textToast1('我只传了文案一个参数')">
         <span slot="title">
           <label>只传文案</label>
         </span>
-      </nut-cell>
-      <nut-cell
+      </lc-cell>
+      <lc-cell
         :showIcon="true"
         :isLink="true"
         @click.native="textToast2('我传了文案和显示时长两个参数，多行文字默认居中展示',5000)"
@@ -15,52 +15,52 @@
         <span slot="title">
           <label>设置显示时长</label>
         </span>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="sucToast('操作成功')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="sucToast('操作成功')">
         <span slot="title">
           <label>Success</label>
         </span>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="failToast('操作失败')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="failToast('操作失败')">
         <span slot="title">
           <label>Fail</label>
         </span>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="warnToast('操作警告')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="warnToast('操作警告')">
         <span slot="title">
           <label>Warn</label>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>加载提示</h4>
     <div>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="showLoading()">
+      <lc-cell :showIcon="true" :isLink="true" @click.native="showLoading()">
         <span slot="title">
           <label>Loading</label>
         </span>
         <span slot="desc">带文案+带透明遮罩（默认）+自动消失</span>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="showLoading2()">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="showLoading2()">
         <span slot="title">
           <label>Loading</label>
         </span>
         <span slot="desc">不自动消失+不带遮罩</span>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="hideLoading()">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="hideLoading()">
         <span slot="title">
           <label>隐藏Loading</label>
         </span>
         <span slot="desc">点击手动隐藏上面的Loading</span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>自定义样式</h4>
     <div>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="cusBgToast('我修改了背景色和透明度')">
+      <lc-cell :showIcon="true" :isLink="true" @click.native="cusBgToast('我修改了背景色和透明度')">
         <span slot="title">
           <label>自定义背景色和透明度</label>
         </span>
-      </nut-cell>
-      <nut-cell
+      </lc-cell>
+      <lc-cell
         :showIcon="true"
         :isLink="true"
         @click.native="cusClassToast('我有一个名为 my-class 自定义class')"
@@ -68,26 +68,26 @@
         <span slot="title">
           <label>自定义class</label>
         </span>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="cusIconToast('自定义Icon')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="cusIconToast('自定义Icon')">
         <span slot="title">
           <label>自定义Icon</label>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>不共享实例</h4>
     <p>如果不指定id，多个Toast默认将共享一个实例（loading类型与其他类型实例不共享），新的内容和设置将取代旧的，多个Toast不能同时出现。如果不需要共享实例，可以给其设置id。例如，以下两个栗子分别设置了不同id，它们可以同时出现。</p>
     <div>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="idToast1('我设置了id为123')">
+      <lc-cell :showIcon="true" :isLink="true" @click.native="idToast1('我设置了id为123')">
         <span slot="title">
           <label>我设置了id为123</label>
         </span>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="idToast2('我设置了id为321')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="idToast2('我设置了id为321')">
         <span slot="title">
           <label>我设置了id为321</label>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
   </div>
 </template>

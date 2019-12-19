@@ -39,7 +39,7 @@ body {
 .demo-wrapper {
   width: 100%;
   min-height: 100vh;
-  padding-top: 40px;
+  // padding-top: 40px;
   box-sizing: border-box;
   background: #f6f6f6;
   &.in-iframe {
@@ -51,6 +51,6 @@ h4 {
   box-sizing: border-box;
 }
 .demo {
-  padding:0 8px 20px 8px;
+  padding:40px 8px 20px 8px;
 }
 </style>

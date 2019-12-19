@@ -1,17 +1,17 @@
 <template>
     <div>
         <h4>基本用法</h4>
-        <nut-imagepicker @imgMsg="imgMsg" :imgList="imgList1"></nut-imagepicker>
+        <lc-imagepicker @imgMsg="imgMsg" :imgList="imgList1"></lc-imagepicker>
         <h4>指定宽度和高度都是120px,图片间距是10px</h4>
-        <nut-imagepicker @imgMsg="imgMsg" :width="120" :height="120" :margin="10" :imgList="imgList2"></nut-imagepicker>
+        <lc-imagepicker @imgMsg="imgMsg" :width="120" :height="120" :margin="10" :imgList="imgList2"></lc-imagepicker>
         <h4>允许上传的最大数量是4张</h4>
-        <nut-imagepicker @imgMsg="imgMsg" :max="4"></nut-imagepicker>
+        <lc-imagepicker @imgMsg="imgMsg" :max="4"></lc-imagepicker>
         <h4>支持多图选择</h4>
-        <nut-imagepicker @imgMsg="imgMsg" :ismultiple=true></nut-imagepicker>
+        <lc-imagepicker @imgMsg="imgMsg" :ismultiple=true></lc-imagepicker>
         <h4>支持长按删除图片</h4>
-        <nut-imagepicker @imgMsg="imgMsg" delMode="longtap"></nut-imagepicker>
+        <lc-imagepicker @imgMsg="imgMsg" delMode="longtap"></lc-imagepicker>
         <h4>选择完成图片之后自动上传</h4>
-        <nut-imagepicker @imgMsg="imgMsg" autoUpload="true"></nut-imagepicker>
+        <lc-imagepicker @imgMsg="imgMsg" autoUpload="true"></lc-imagepicker>
     </div>
 </template>
 

@@ -1,9 +1,9 @@
 {
-  "name": "@nutui/nutui",
-  "version": "2.1.7",
-  "description": "一套轻量级移动端Vue组件库",
+  "name": "@lighting/ui-h5",
+  "version": "0.0.1",
+  "description": "Light移动端H5组件库",
   "typings": "dist/types/index.d.ts",
-  "main": "./src/nutui.js",
+  "main": "./src/lightui.js",
   "files": [
     "dist",
     "README.md",
@@ -36,8 +36,7 @@
     "url": "https://github.com/jdf2e/nutui.git"
   },
   "keywords": [
-    "nutui",
-    "nutui2",
+    "lighting-ui",
     "vue",
     "webpack",
     "vue component",
@@ -49,6 +48,7 @@
   "dependencies": {
     "@babel/polyfill": "7.0.0",
     "@babel/runtime": "7.1.2",
+    "better-scroll": "^1.15.2",
     "cache-loader": "^4.1.0",
     "happypack": "^5.0.1",
     "intersection-observer": "^0.5.1",

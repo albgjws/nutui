@@ -1,12 +1,12 @@
 <template>
   <div class="demo-list">
-    <nut-noticebar
+    <lc-noticebar
       :closeMode="true"
       v-if="!isMobile"
-    >此 Demo 在 PC 端浏览器与移动端浏览器体验差异较大，建议在 Android 或 iOS 设备上体验。</nut-noticebar>
+    >此 Demo 在 PC 端浏览器与移动端浏览器体验差异较大，建议在 Android 或 iOS 设备上体验。</lc-noticebar>
     <h4>基本用法</h4>
     <div>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible')">
+      <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible')">
         <span slot="title">
           <label>日期选择</label>
         </span>
@@ -14,8 +14,8 @@
         <div slot="desc" class="selected-option">
           <span class="show-value">{{date ? date : '请选择日期'}}</span>
         </div>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible1')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible1')">
         <span slot="title">
           <label>日期选择</label>
         </span>
@@ -23,8 +23,8 @@
         <div slot="desc" class="selected-option">
           <span class="show-value">{{date1 ? date1 : '请选择日期'}}</span>
         </div>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible2')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible2')">
         <span slot="title">
           <label>日期时间选择</label>
         </span>
@@ -32,8 +32,8 @@
         <div slot="desc" class="selected-option">
           <span class="show-value">{{datetime ? datetime : '请选择'}}</span>
         </div>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible3')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible3')">
         <span slot="title">
           <label>时间选择</label>
         </span>
@@ -41,8 +41,8 @@
         <div slot="desc" class="selected-option">
           <span class="show-value">{{time ? `${time} ${amOrPm}` : '请选择时间'}}</span>
         </div>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible4')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible4')">
         <span slot="title">
           <label>时间选择</label>
         </span>
@@ -50,8 +50,8 @@
         <div slot="desc" class="selected-option">
           <span class="show-value">{{time1 ? time1 : '请选择时间'}}</span>
         </div>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible5')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible5')">
         <span slot="title">
           <label>时间选择</label>
         </span>
@@ -59,19 +59,19 @@
         <div slot="desc" class="selected-option">
           <span class="show-value">{{time2 ? time2 : '请选择时间'}}</span>
         </div>
-      </nut-cell>
+      </lc-cell>
     </div>
     <!-- demo-->
-    <nut-datepicker
+    <lc-datepicker
       :is-visible="isVisible"
       type="date"
       title="请选择日期"
       :is-show-chinese="false"
       @close="switchPicker('isVisible')"
       @choose="setChooseValue"
-    ></nut-datepicker>
+    ></lc-datepicker>
     <!-- demo1-->
-    <nut-datepicker
+    <lc-datepicker
       :is-visible="isVisible1"
       title="请选择日期"
       type="date"
@@ -79,9 +79,9 @@
       endDate="2019-10-05"
       @close="switchPicker('isVisible1')"
       @choose="setChooseValue1"
-    ></nut-datepicker>
+    ></lc-datepicker>
     <!-- demo2-->
-    <nut-datepicker
+    <lc-datepicker
       :is-visible="isVisible2"
       title="请选择日期时间"
       type="datetime"
@@ -90,9 +90,9 @@
       defaultValue="2018-11-02 11:08"
       @close="switchPicker('isVisible2')"
       @choose="setChooseValue2"
-    ></nut-datepicker>
+    ></lc-datepicker>
     <!-- demo3-->
-    <nut-datepicker
+    <lc-datepicker
       :is-visible="isVisible3"
       type="time"
       title="请选择时间"
@@ -101,9 +101,9 @@
       :is-use12-hours="true"
       defaultValue="01:07"
       :is-am="false"
-    ></nut-datepicker>
+    ></lc-datepicker>
     <!-- demo4-->
-    <nut-datepicker
+    <lc-datepicker
       :is-visible="isVisible4"
       type="time"
       title="请选择时间"
@@ -112,9 +112,9 @@
       defaultValue="09:06"
       @close="switchPicker('isVisible4')"
       @choose="setChooseValue4"
-    ></nut-datepicker>
+    ></lc-datepicker>
     <!-- demo4-->
-    <nut-datepicker
+    <lc-datepicker
       :is-visible="isVisible5"
       type="time"
       title="请选择时间"
@@ -122,7 +122,7 @@
       defaultValue="10:30"
       @close="switchPicker('isVisible5')"
       @choose="setChooseValue5"
-    ></nut-datepicker>
+    ></lc-datepicker>
   </div>
 </template>
 

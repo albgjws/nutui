@@ -3,9 +3,9 @@
   <div>
       <lc-title title="页签组"></lc-title>
       <category title="默认按钮组"></category>
-      <nut-tab-group :groups="groups" @changeTab="clickGroup" :tabIndex="2" style="margin-top:20px;"></nut-tab-group>
+      <lc-tab-group :groups="groups" @changeTab="clickGroup" :tabIndex="2" style="margin-top:20px;"></lc-tab-group>
       <category title="自定义按钮组"></category>
-      <nut-tab-group :groups="groups" :tabStyles="tabStyles" style="margin-top:20px;"></nut-tab-group>
+      <lc-tab-group :groups="groups" :tabStyles="tabStyles" style="margin-top:20px;"></lc-tab-group>
   </div>
 </template>
 

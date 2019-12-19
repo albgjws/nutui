@@ -1,56 +1,56 @@
 <template>
     <div class="demo-list">
-        <nut-noticebar
+        <lc-noticebar
         :closeMode="true"
         v-if="!isMobile"
         >此 Demo 在 PC 端浏览器与移动端浏览器体验差异较大，建议在 Android 或 iOS 设备上体验。
-        </nut-noticebar>
+        </lc-noticebar>
         <h4>基本用法</h4>
-        <nut-cell :showIcon="true" @click.native="switchPicker('isVisible')">
+        <lc-cell :showIcon="true" @click.native="switchPicker('isVisible')">
             <span slot="title"><label>日期选择</label></span>
             <span slot="sub-title">没有默认日期~~~</span>
             <div slot="desc" class="selected-option" >
                 <span class="show-value">{{date ? `${date} ${dateWeek}` : '请选择日期'}}</span>
             </div>
-        </nut-cell>
-        <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible2')">
+        </lc-cell>
+        <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible2')">
             <span slot="title"><label>日期选择</label></span>
             <span slot="sub-title">有默认日期，选择后自动回填的~~~</span>
             <div slot="desc" class="selected-option" >
                 <span class="show-value">{{date2 ? date2 : '请选择日期'}}</span>
             </div>
-        </nut-cell>
-        <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible1')">
+        </lc-cell>
+        <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible1')">
             <span slot="title"><label>日期区间选择</label></span>
             <span slot="sub-title">有默认日期~~~</span>
             <div slot="desc" class="selected-option" >
                 <span class="show-value">{{date1 ? `${date1[0]}至${date1[1]}`  : '请选择日期'}}</span>
             </div>
-        </nut-cell>
-        <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible3')">
+        </lc-cell>
+        <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible3')">
             <span slot="title"><label>日期区间选择</label></span>
             <span slot="sub-title">不限制开始结束时间~~~</span>
             <div slot="desc" class="selected-option" >
                 <span class="show-value">{{date3 ? `${date3[0]}至${date3[1]}`  : '请选择日期'}}</span>
             </div>
-        </nut-cell>
+        </lc-cell>
         <!-- demo-->
-        <nut-calendar :is-visible="isVisible"
+        <lc-calendar :is-visible="isVisible"
             :default-value="date"
             @close="switchPicker('isVisible')"
             @choose="setChooseValue"
             :start-date="`2018-10-11`"
             :end-date="`2020-11-11`"
         >
-        </nut-calendar>
-        <nut-calendar :is-visible="isVisible2"
+        </lc-calendar>
+        <lc-calendar :is-visible="isVisible2"
             :default-value="date2"
             :is-auto-back-fill="true"
             @close="switchPicker('isVisible2')"
             @choose="setChooseValue2"
         >
-        </nut-calendar>
-        <nut-calendar :is-visible="isVisible1"
+        </lc-calendar>
+        <lc-calendar :is-visible="isVisible1"
             :default-value="date1"
             type="range"
             :start-date="null"
@@ -58,8 +58,8 @@
             @close="switchPicker('isVisible1')"
             @choose="setChooseValue1"
         >
-        </nut-calendar>
-        <nut-calendar :is-visible="isVisible3"
+        </lc-calendar>
+        <lc-calendar :is-visible="isVisible3"
             :default-value="date3"
             type="range"
             :start-date="null"
@@ -67,7 +67,7 @@
             @close="switchPicker('isVisible3')"
             @choose="setChooseValue3"
         >
-        </nut-calendar> 
+        </lc-calendar> 
     </div>
 </template>
 

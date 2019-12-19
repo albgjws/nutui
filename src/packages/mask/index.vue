@@ -1,13 +1,13 @@
 
 <template>
   <div class="container">
-    <nut-overlay :show="show && hasOverlay"
+    <lc-overlay :show="show && hasOverlay"
                 :hasAnimation="hasAnimation"
                 :opacity="opacity"
                 v-bind="mergeOverlayCfg"
                 :can-auto-close="overlayCanClose" 
                 @LcOverlayBodyClicking="LcOverlayBodyClicking"
-                @LcOverlayBodyClicked="LcOverlayBodyClicked"></nut-overlay>
+                @LcOverlayBodyClicked="LcOverlayBodyClicked"></lc-overlay>
     <transition :name="hasAnimation?'fade':''">
         <div class="lc-mask"
             v-if="show"
@@ -43,6 +43,7 @@
     transform: translate(-50%,-50%);
     width: 300px;
     height: 400px;
+    z-index: 999;
   }
 
   .mask-bottom {

@@ -4,30 +4,30 @@
         <lc-title title="滑动菜单"></lc-title>
             
         <category title="简单滑动菜单-手势向左边滑动,菜单按钮操作"></category>
-        <nut-swipe-cell @actionClick="clickmenu"
+        <lc-swipe-cell @actionClick="clickmenu"
                         @swipeleft="swipeleft"
                         @swiperight="swiperight"
                         :items="btnAry1"
-                        :title="'腾讯新闻-今日头条'"></nut-swipe-cell>
+                        :title="'腾讯新闻-今日头条'"></lc-swipe-cell>
 
         <category title="滑动菜单-高度设置"></category>                
-        <nut-swipe-cell @actionClick="clickmenu"
+        <lc-swipe-cell @actionClick="clickmenu"
                         :height="'75px'"
                         :items="btnAry1"
-                        :title="'腾讯新闻-今日头条'"></nut-swipe-cell>
+                        :title="'腾讯新闻-今日头条'"></lc-swipe-cell>
 
         <category title="场景1-组件扩展案例"></category>                
-        <nut-swipe-cell :items="btnAry1"
+        <lc-swipe-cell :items="btnAry1"
                         :title="'腾讯新闻-今日头条'"
                         @wrapClick="fn">
             
                 <span slot="content">--腾讯新闻-今日头条--</span>
             
-        </nut-swipe-cell>
+        </lc-swipe-cell>
 
         <category title="场景2-与列表结合案例"></category>                
         <div v-for="(i, index) in items" :key="index">
-            <nut-swipe-cell :index="index" :hasArrow="true" :items="btnAry" :title="i.title" @actionClick="clickmenu1"></nut-swipe-cell>
+            <lc-swipe-cell :index="index" :hasArrow="true" :items="btnAry" :title="i.title" @actionClick="clickmenu1"></lc-swipe-cell>
         </div>
 
     </div>

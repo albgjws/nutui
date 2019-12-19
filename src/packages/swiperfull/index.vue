@@ -1,7 +1,7 @@
 
 <template>
   <div class="container">
-      <nut-mask :width="width"
+      <lc-mask :width="width"
                 :height="height"
                 border-radius="10"
                 opacity="0.6"
@@ -10,7 +10,7 @@
                 :show-close="false"
                 :show="show"
                 @LcMaskSetHidden="LcMaskSetHidden">
-            <nut-swiper
+            <lc-swiper
                     :paginationVisibile="true"
                     ref="nutSwiper"
                     :loop="loop"
@@ -26,8 +26,8 @@
                 <div v-for="(item,index) in dataImgItem" :key="index" class="nut-swiper-slide" :style="{ height: height  + 'px'}" >
                     <img :src="item.imgSrc" :style="{ height: height + 'px', width: width  + 'px'}" /> 
                 </div>
-            </nut-swiper>
-      </nut-mask>
+            </lc-swiper>
+      </lc-mask>
      
 
   </div>

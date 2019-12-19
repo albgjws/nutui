@@ -2,9 +2,9 @@
   <div class="demo-list">
     <h4>基本用法</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-uploader
+          <lc-uploader
             :name="name"
             :url="url"
             :xhrState="stateNum"
@@ -13,18 +13,18 @@
             @failure="demo1Fail"
             @start="demo1UploadStart"
             @showMsg="showMsg"
-          >{{demo1Name}}</nut-uploader>
+          >{{demo1Name}}</lc-uploader>
         </span>
         <div slot="desc"></div>
-      </nut-cell>
+      </lc-cell>
     </div>
 
     <h4>高级用法</h4>
     <p>结合Button组件和Toast组件使用</p>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-uploader
+          <lc-uploader
             :name="name"
             :url="url"
             :xhrState="stateNum"
@@ -33,18 +33,18 @@
             @failure="demo2Fail"
             @showMsg="showMsg1"
           >
-            <nut-button small>{{demo2Name}}</nut-button>
-          </nut-uploader>
+            <lc-button small>{{demo2Name}}</lc-button>
+          </lc-uploader>
         </span>
         <div slot="desc"></div>
-      </nut-cell>
+      </lc-cell>
     </div>
 
     <p>结合进度条Progress组件使用，展示上传进度</p>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-uploader
+          <lc-uploader
             :name="name"
             :url="url"
             :xhrState="stateNum"
@@ -55,14 +55,14 @@
             @showMsg="showMsg1"
             :clearInput="true"
           >
-            <nut-button small>上传</nut-button>
-          </nut-uploader>
+            <lc-button small>上传</lc-button>
+          </lc-uploader>
         </span>
         <div slot="desc"></div>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress
+          <lc-progress
             class="progress-style"
             :percentage="progressNum"
             :showText="true"
@@ -70,14 +70,14 @@
           />
         </span>
         <div slot="desc"></div>
-      </nut-cell>
+      </lc-cell>
     </div>
 
     <p>自定义headers&formData</p>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-uploader
+          <lc-uploader
             :name="name"
             :url="url"
             :xhrState="stateNum"
@@ -88,18 +88,18 @@
             @preview="preview"
             @showMsg="showMsg1"
           >
-            <nut-button small>上传</nut-button>
-          </nut-uploader>
+            <lc-button small>上传</lc-button>
+          </lc-uploader>
         </span>
         <div slot="desc"></div>
-      </nut-cell>
+      </lc-cell>
     </div>
 
     <p>预览上传图片</p>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-uploader
+          <lc-uploader
             :name="name"
             :url="url"
             :xhrState="stateNum"
@@ -109,11 +109,11 @@
             @preview="preview"
             @showMsg="showMsg1"
           >
-            <nut-button small>上传</nut-button>
-          </nut-uploader>
+            <lc-button small>上传</lc-button>
+          </lc-uploader>
         </span>
         <div slot="desc"></div>
-      </nut-cell>
+      </lc-cell>
     </div>
 
     <transition name="fade">

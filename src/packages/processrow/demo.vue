@@ -2,11 +2,11 @@
   <div class="demo">
       <lc-title title="横向流程条"></lc-title>
       <category title="普通状态"></category>
-      <nut-process-row :processList="processList"></nut-process-row>
+      <lc-process-row :processList="processList"></lc-process-row>
       <category title="错误状态"></category>
-      <nut-process-row :processList="processList1"></nut-process-row>
+      <lc-process-row :processList="processList1"></lc-process-row>
       <category title="取消状态"></category>
-      <nut-process-row :processList="processList2"></nut-process-row>
+      <lc-process-row :processList="processList2"></lc-process-row>
   </div>
 </template>
 <script>

@@ -2,7 +2,7 @@
   <div>
     <lc-title title="密码键盘"></lc-title>
     <category title="使用案例"></category>
-    <nut-keyboard ref="pwd" class="align-bottom" @complete="completeHandler" @forgetClicked="forgetHandler" :showError="isErr" :showForget="isForgot" :chance="chance"></nut-keyboard>
+    <lc-keyboard ref="pwd" class="align-bottom" @complete="completeHandler" @forgetClicked="forgetHandler" :showError="isErr" :showForget="isForgot" :chance="chance"></lc-keyboard>
   </div>
 </template>
 
@@ -18,8 +18,7 @@
 </style>
 
 <script>
-//   import LcPopup from 'lighting-ui/packages/lc-popup';
-//   import LcKeyboard from 'lighting-ui/packages/lc-keyboard';
+
   import LcTitle from '../../packages/_mods/title.vue';
   import Category from '../../packages/_mods/category.vue';
 

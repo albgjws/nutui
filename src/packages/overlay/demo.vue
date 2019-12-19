@@ -4,15 +4,15 @@
       <lc-title title="蒙层" class="title"></lc-title>
       <category title="使用案例"></category>
       <div class="button-list">
-        <nut-button class="btn-margin" @click="openOverlay">点击打开动画蒙层</nut-button>
-        <nut-button class="btn-margin" @click="openNoAniOverlay">点击打开无动画蒙层</nut-button>
+        <lc-button class="btn-margin" @click="openOverlay">点击打开动画蒙层</lc-button>
+        <lc-button class="btn-margin" @click="openNoAniOverlay">点击打开无动画蒙层</lc-button>
       </div>
       
-      <nut-overlay :show="show"
+      <lc-overlay :show="show"
                    duration="1900"
                    :hasAnimation="hasAnimation"
                    @LcOverlayBodyClicked="LcOverlayBodyClicked"
-                   opacity="0.6"></nut-overlay>
+                   opacity="0.6"></lc-overlay>
   </div>
 </template>
 

@@ -6,14 +6,14 @@
     >此 Demo 在 PC 端浏览器与移动端浏览器体验差异较大，建议在 Android 或 iOS 设备上体验。</nut-noticebar>
     <h4>基本用法</h4>
     <div>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible0')">
+      <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible0')">
         <span slot="title">
           <label>年月选择</label>
         </span>
         <span slot="sub-title">不联动多列~~~</span>
         <div slot="desc" class="selected-option">{{date ? date : '请选择'}}</div>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible')">
         <span slot="title">
           <label>城市选择</label>
         </span>
@@ -22,8 +22,8 @@
           <span class="btn" @click.stop.prevent="modifyCity">修改为指定的城市</span>
           <span class="show-value">{{city ? city : '请选择'}}</span>
         </div>
-      </nut-cell>
-      <nut-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible1')">
+      </lc-cell>
+      <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible1')">
         <span slot="title">
           <label>年选择</label>
         </span>
@@ -32,19 +32,19 @@
           <span class="btn" @click.stop.prevent="modifyYear">修改为指定的年份</span>
           <span class="show-value">{{year ? year : '请选择'}}</span>
         </div>
-      </nut-cell>
+      </lc-cell>
     </div>
     <!-- demo 年月选择(不联动)-->
-    <nut-picker
+    <lc-picker
       :is-visible="isVisible0"
       :list-data="listData0"
       title="请选择年月"
       :default-value-data="defaultValueData0"
       @close="switchPicker('isVisible0')"
       @confirm="setChooseValue0"
-    ></nut-picker>
+    ></lc-picker>
     <!-- demo 城市选择(联动)-->
-    <nut-picker
+    <lc-picker
       :is-visible="isVisible"
       title="请选择城市"
       :list-data="listData"
@@ -53,15 +53,15 @@
       @confirm="setChooseValue"
       @choose="updateChooseValue"
       @close-update="closeUpdateChooseValue"
-    ></nut-picker>
+    ></lc-picker>
     <!-- demo 年选择-->
-    <nut-picker
+    <lc-picker
       :is-visible="isVisible1"
       :default-value-data="defaultValueData1"
       :list-data="listData1"
       @close="switchPicker('isVisible1')"
       @confirm="setYearValue"
-    ></nut-picker>
+    ></lc-picker>
   </div>
 </template>
 

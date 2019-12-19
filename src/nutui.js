@@ -113,23 +113,25 @@ import Process from "./packages/process/index.js";
 import Processrow from "./packages/processrow/index.js";
 import Result from "./packages/result/index.js";
 import Tag from "./packages/tag/index.js";
-import TagWall from "./packages/tagwall/index.js";
+import Tagwall from "./packages/tagwall/index.js";
 import Bank from "./packages/bank/index.js";
 import Mapcity from "./packages/mapcity/index.js";
 import Popover from "./packages/popover/index.js";
 import Swipecell from "./packages/swipecell/index.js";
 import Tabgroup from "./packages/tabgroup/index.js";
 import Epslider from "./packages/epslider/index.js";
+import Slidermenu from "./packages/slidermenu/index.js";
 
 
 const packages = {
+  Slidermenu,
   Epslider,
   Tabgroup,
   Swipecell,
   Popover,
   Mapcity,
   Bank,
-  TagWall,
+  Tagwall,
   Tag,
   Result,
   Processrow,
@@ -208,18 +210,18 @@ pkgList.map(item => {
   if (!pkg) return;
   if (item.type == 'component') {
     if (pkg.name) {
-      components[pkg.name] = pkg;
+      components[pkg.name.replace('nut-', 'lc-')] = pkg;
     } else {
       for (let n in pkg) {
         components[n] = pkg[n];
       }
     }
   } else if (item.type == 'method') {
-    methods[item.name] = pkg;
+    methods[item.name.replace('nut-', 'lc-')] = pkg;
   } else if (item.type == 'filter') {
-    filters[item.name] = pkg;
+    filters[item.name.replace('nut-', 'lc-')] = pkg;
   } else if (item.type == 'directive') {
-    directives[item.name] = pkg;
+    directives[item.name.replace('nut-', 'lc-')] = pkg;
   }
 });
 
@@ -235,7 +237,7 @@ const install = function (Vue, opts = {}) {
   for (let cptName in methods) {
     if (Array.isArray(methods[cptName])) {
       Vue.prototype['$' + cptName.toLowerCase()] = methods[cptName][0];
-      Vue.component(methods[cptName][1].name, methods[cptName][1]);
+      Vue.component(methods[cptName][1].name.replace('nut-', 'lc-'), methods[cptName][1]);
     } else {
       Vue.prototype['$' + cptName.toLowerCase()] = methods[cptName];
     }
@@ -243,19 +245,19 @@ const install = function (Vue, opts = {}) {
 
   for (let cptName in components) {
     if (components[cptName] && components[cptName].name) {
-      Vue.component(components[cptName].name, components[cptName]);
+      Vue.component(components[cptName].name.replace('nut-', 'lc-'), components[cptName]);
     }
   }
 
   for (let cptName in filters) {
     if (filters[cptName] && filters[cptName].name) {
-      Vue.filter(cptName, filters[cptName]);
+      Vue.filter(cptName.name.replace('nut-', 'lc-'), filters[cptName]);
     }
   }
 
   for (let cptName in directives) {
     if (directives[cptName] && directives[cptName].name) {
-      Vue.directive(directives[cptName].name, directives[cptName]);
+      Vue.directive(directives[cptName].name.replace('nut-', 'lc-'), directives[cptName]);
     }
   }
 

@@ -5,11 +5,11 @@
       <category title="单选"></category>
 
       <div class="demo1">
-        <nut-grid-select
+        <lc-grid-select
           :list="testData1"
           :single="true"
           @select="params => onSelect('res1', params)">
-        </nut-grid-select>
+        </lc-grid-select>
 
         <p class="res">{{res1}}</p>
       </div>
@@ -17,12 +17,12 @@
       <category title="多选"></category>
 
       <div class="demo1">
-        <nut-grid-select
+        <lc-grid-select
           :list="testData2"
           :limit="5"
           @overLimit="onOverLimit"
           @select="params => onSelect('res2', params)">
-        </nut-grid-select>
+        </lc-grid-select>
 
         <p class="res">{{res2}}</p>
       </div>
@@ -30,13 +30,13 @@
       <category title="自定义样式"></category>
 
       <div class="demo1">
-        <nut-grid-select
+        <lc-grid-select
           :single="true"
           :cols="5"
           :customStyles="customStyles"
           :list="testData3"
           @select="params => onSelect('res3', params)">
-        </nut-grid-select>
+        </lc-grid-select>
 
         <p class="res">{{res3}}</p>
       </div>

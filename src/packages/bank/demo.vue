@@ -7,15 +7,15 @@
         <span class="btn-txt">点击选择银行卡</span>
     </div>
 
-    <nut-popup height="400"
+    <lc-popup height="400"
                 :show="isPopShow"
                 @LcPopupOverlayClicked="isPopShow=false"
                 pos="bottom">
-        <nut-bank
+        <lc-bank
           :list="cardList"
           @bankSelected="selectHandler"
-        ></nut-bank>        
-    </nut-popup>
+        ></lc-bank>        
+    </lc-popup>
 
   </div>
 </template>

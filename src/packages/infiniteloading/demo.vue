@@ -1,11 +1,11 @@
 <template>
     <div>
-        <nut-infiniteloading @loadmore="onInfinite" :is-show-mod="true" :has-more="isHasMore" :is-loading="isLoading"
+        <lc-infiniteloading @loadmore="onInfinite" :is-show-mod="true" :has-more="isHasMore" :is-loading="isLoading"
            :threshold="200">
             <ul class="list" >
                 <li class="list-item" v-for="(item, index) of data" :key="item">我是测试数据{{index + 1}}</li>
             </ul>
-        </nut-infiniteloading>
+        </lc-infiniteloading>
     </div>
 </template>
 

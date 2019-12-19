@@ -1,7 +1,7 @@
 <template>
     <div id="vueSwiper">
         <h4>横向无缝切换</h4>
-        <nut-swiper
+        <lc-swiper
             :paginationVisibile="true"
             direction="horizontal"
             :swiperData="dataImgItem"
@@ -10,10 +10,10 @@
                 <img :src="item.imgSrc"   style="width:100%; height:100%;"/> 
             </div>
 
-        </nut-swiper>
+        </lc-swiper>
 
         <h4>横向切换</h4>
-        <nut-swiper
+        <lc-swiper
             :paginationVisibile="true"
             direction="horizontal"
             :swiperData="dataImgItem"
@@ -24,10 +24,10 @@
                 <img :src="item.imgSrc"   style="width:100%; height:100%;" /> 
             </div>
 
-        </nut-swiper>
+        </lc-swiper>
 
          <h4>横向循环切换</h4>
-         <nut-swiper
+         <lc-swiper
             :paginationVisibile="true"
             direction="horizontal"
             :swiperData="dataImgItem"
@@ -40,10 +40,10 @@
             </div>
 
 
-        </nut-swiper>
+        </lc-swiper>
 
          <h4>纵向自动播放</h4>
-          <nut-swiper
+          <lc-swiper
             direction="vertical"
             :autoPlay="3000"
             :swiperData="dataImgItem"
@@ -51,10 +51,10 @@
              <div  v-for="(item,index) in dataImgItem" :key="index"  class="nut-swiper-slide ">
                 <img :src="item.imgSrc"   style="width:100%; height:100%;" /> 
             </div>
-        </nut-swiper>
+        </lc-swiper>
 
         <h4>滑动懒加载图片</h4>
-        <nut-swiper
+        <lc-swiper
             direction="horizontal"
             :paginationClickable="true"
             :swiperData="dataImgItem"
@@ -68,7 +68,7 @@
                 <img :data-src="item.imgSrc"  style="width:100%; height:100%;" class="nut-img-lazyload"/> 
             </div>
 
-        </nut-swiper>
+        </lc-swiper>
 
         
   

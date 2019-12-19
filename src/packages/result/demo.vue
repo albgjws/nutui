@@ -1,13 +1,13 @@
 
 <template>
   <div class="wxc-demo">
-    <nut-result  :icon="icon"
+    <lc-result  :icon="icon"
                 :title="title"
                 :desc="desc"
                 padding-top="116"
                 @onResultClick="resultClicked"
                 class="result"
-                ></nut-result>
+                ></lc-result>
   </div>
 </template>
 
@@ -27,10 +27,8 @@
 
 <script>
   import TYPE from './result.js';
-  import nutResult from '../../packages/result/index.vue';
 
   export default {
-    components:{nutResult},
     data: () => ({
       icon: TYPE['error']['icon'],
       title: TYPE['error']['title'],

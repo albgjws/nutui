@@ -4,17 +4,17 @@
         <lc-title title="懒加载"></lc-title>
         <category title="懒加载"></category>
             
-        <nut-lazy-render :time="time1">          
+        <lc-lazy-render :time="time1">          
             <div class="lazy">
                 <img src="https://s2.ax1x.com/2019/11/27/Q9OrkV.png" class="lazy" style="width:25px;height:25px;"/>
             </div>           
-        </nut-lazy-render>
+        </lc-lazy-render>
 
-        <nut-lazy-render :time="time2" @loaded="onLoad" :tip="tip" :maskStyle="maskStyle" :tipStyle="tipStyle">
+        <lc-lazy-render :time="time2" @loaded="onLoad" :tip="tip" :maskStyle="maskStyle" :tipStyle="tipStyle">
             <div class="lazy">
                 <span class="lazy">11111</span>    
             </div>                   
-        </nut-lazy-render>
+        </lc-lazy-render>
 
     </div>
 </template>

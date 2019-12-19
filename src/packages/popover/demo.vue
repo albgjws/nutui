@@ -7,7 +7,7 @@
       <div>
 
         <div class="demo1">
-          <nut-navbar @on-click-more="minibarRightButtonClick" class="navstyle">点击右方拓展按钮</nut-navbar>
+          <lc-navbar @on-click-more="minibarRightButtonClick" class="navstyle">点击右方拓展按钮</lc-navbar>
         </div>
 
         <div class="demo0 demo3">
@@ -16,41 +16,41 @@
         </div>
 
         <div class="demo0 demo2">
-          <nut-button @click="LcButtonClicked2">向上弹出</nut-button>
+          <lc-button @click="LcButtonClicked2">向上弹出</lc-button>
         </div>
 
         <!-- demo 1 pop -->
-        <nut-popover ref="lc-popover1"
+        <lc-popover ref="lc-popover1"
                      :buttons="btns"
                      :position="popoverPosition"
                      :arrowPosition="popoverArrowPosition"
                      @LcPopoverButtonClicked="popoverButtonClicked"
-        ></nut-popover>
+        ></lc-popover>
 
         <!-- demo 2 pop -->
-        <nut-popover ref="lc-popover2"
+        <lc-popover ref="lc-popover2"
                      :buttons="btns2"
                      :position="popoverPosition2"
                      :arrowPosition="popoverArrowPosition2"
                      @LcPopoverButtonClicked="popoverButtonClicked"
-        ></nut-popover>
+        ></lc-popover>
 
         <!-- demo 3 pop -->
-        <nut-popover ref="lc-popover3"
+        <lc-popover ref="lc-popover3"
                      :buttons="btns3"
                      :position="popoverPosition3"
                      :hasAnimation="false"
                      :arrowPosition="popoverArrowPosition3"
                      @LcPopoverButtonClicked="popoverButtonClicked"
-        ></nut-popover>
+        ></lc-popover>
 
         <!-- demo 4 pop -->
-        <nut-popover ref="lc-popover4"
+        <lc-popover ref="lc-popover4"
                      :buttons="btns4"
                      :position="popoverPosition4"
                      :arrowPosition="popoverArrowPosition4"
                      @LcPopoverButtonClicked="popoverButtonClicked"
-        ></nut-popover>
+        ></lc-popover>
       </div>
   </div>
 </template>

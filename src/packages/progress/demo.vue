@@ -3,97 +3,97 @@
     <h4>基本用法</h4>
     <p>线形进度条-设置颜色高度</p>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress percentage="30" strokeColor="#8e71c7"/>
+          <lc-progress percentage="30" strokeColor="#8e71c7"/>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <p>线形进度条-百分比不显示</p>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress percentage="50" :showText="false" strokeWidth="24"/>
+          <lc-progress percentage="50" :showText="false" strokeWidth="24"/>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <p>线形进度条-百分比外显</p>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress percentage="30"/>
+          <lc-progress percentage="30"/>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <p>线形进度条-百分比内显</p>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress percentage="60" :textInside="true"/>
+          <lc-progress percentage="60" :textInside="true"/>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <p>线形进度条-自定义尺寸(内置"small","base","large"三种规格)</p>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress percentage="30" :textInside="true" size="small">
+          <lc-progress percentage="30" :textInside="true" size="small">
             <slot>
               <span>small</span>
             </slot>
-          </nut-progress>
+          </lc-progress>
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress percentage="50" :textInside="true" size="base">
+          <lc-progress percentage="50" :textInside="true" size="base">
             <slot>
               <span>base</span>
             </slot>
-          </nut-progress>
+          </lc-progress>
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress percentage="70" :textInside="true" size="large">
+          <lc-progress percentage="70" :textInside="true" size="large">
             <slot>
               <span>large</span>
             </slot>
-          </nut-progress>
+          </lc-progress>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <p>线形进度条-状态显示</p>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress percentage="30" strokeColor="#1890ff" status="active"/>
+          <lc-progress percentage="30" strokeColor="#1890ff" status="active"/>
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress percentage="50" strokeWidth="15" status="wrong"/>
+          <lc-progress percentage="50" strokeWidth="15" status="wrong"/>
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress percentage="100" strokeColor="#1890ff" strokeWidth="15" status="success"/>
+          <lc-progress percentage="100" strokeColor="#1890ff" strokeWidth="15" status="success"/>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>设置百分比</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-progress size="small" :percentage="val"/>
+          <lc-progress size="small" :percentage="val"/>
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-button type="default" shape="circle" @click="setReduceVal" small>减少</nut-button>
-          <nut-button type="red" shape="circle" @click="setAddVal" small>增加</nut-button>
+          <lc-button type="default" shape="circle" @click="setReduceVal" small>减少</lc-button>
+          <lc-button type="red" shape="circle" @click="setAddVal" small>增加</lc-button>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
   </div>
 </template>

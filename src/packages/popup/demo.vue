@@ -4,36 +4,36 @@
       <lc-title title="遮罩弹层" class="title"></lc-title>
       <category title="使用案例"></category>
       <div class="button-list">
-        <nut-button class="btn-margin" @click="isLeftShow=true">点击弹出左侧面板</nut-button>
-        <nut-button class="btn-margin" @click="isRightShow=true">点击弹出右侧面板</nut-button>
-        <nut-button class="btn-margin" @click="isBottomShow=true">点击弹出底部面板</nut-button>
-        <nut-button class="btn-margin" @click="isTopShow=true">点击弹出顶部面板</nut-button>
+        <lc-button class="btn-margin" @click="isLeftShow=true">点击弹出左侧面板</lc-button>
+        <lc-button class="btn-margin" @click="isRightShow=true">点击弹出右侧面板</lc-button>
+        <lc-button class="btn-margin" @click="isBottomShow=true">点击弹出底部面板</lc-button>
+        <lc-button class="btn-margin" @click="isTopShow=true">点击弹出顶部面板</lc-button>
       </div>
       
-      <nut-popup width="200"
+      <lc-popup width="200"
                  :show="isLeftShow"
                  @LcPopupOverlayClicked="hide"
                  pos="left">
-      </nut-popup>
+      </lc-popup>
 
-      <nut-popup width="300"
+      <lc-popup width="300"
                  :show="isRightShow"
                  @LcPopupOverlayClicked="hide"
                  pos="right">
-            <nut-button class="btn-margin" @click="isRightShow=false">点击隐藏</nut-button>
-      </nut-popup>
+            <lc-button class="btn-margin" @click="isRightShow=false">点击隐藏</lc-button>
+      </lc-popup>
 
-      <nut-popup height="300"
+      <lc-popup height="300"
                  :show="isBottomShow"
                  @LcPopupOverlayClicked="hide"
                  pos="bottom">
-      </nut-popup>
+      </lc-popup>
 
-      <nut-popup height="300"
+      <lc-popup height="300"
                  :show="isTopShow"
                  @LcPopupOverlayClicked="hide"
                  pos="top">
-      </nut-popup>
+      </lc-popup>
   </div>
 </template>
 

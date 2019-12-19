@@ -2,23 +2,23 @@
     <div>
         <lc-title title="标签墙"></lc-title>
         <category title="基本态"></category>
-        <nut-tag-wall title="基本态"
+        <lc-tag-wall title="基本态"
                     :list="tagData"
                     @lcTagWallSelected="onSelect"
                     @lcTagWallRightBtnClicked="rightClicked" />
         <category title="修改右边按钮"></category>
-        <nut-tag-wall title="修改右边按钮"
+        <lc-tag-wall title="修改右边按钮"
                     :list="tagData"
                     @lcTagWallSelected="onSelect"
                     right-text="查看更多"
                     right-color="#FC5B23"
                     @lcTagWallRightBtnClicked="rightClicked" />
         <category title="自定义样式"></category>
-        <nut-tag-wall title="自定义样式"
+        <lc-tag-wall title="自定义样式"
                     :list="tagData2"
                     @lcTagWallSelected="onSelect"
                     :custom-styles="customStyle"
-                    @lcTagWallRightBtnClicked="rightClicked"></nut-tag-wall>
+                    @lcTagWallRightBtnClicked="rightClicked"></lc-tag-wall>
 
     </div>
 </template>
@@ -26,9 +26,8 @@
 <script>
   import LcTitle from '../../packages/_mods/title.vue';
   import Category from '../../packages/_mods/category.vue';
-  import nutTagWall from '../../packages/tagwall/index.vue';
   export default {
-    components: { LcTitle, Category,nutTagWall },    
+    components: { LcTitle, Category },    
     data: () => ({
         tagData: [{
                 title: '微信',

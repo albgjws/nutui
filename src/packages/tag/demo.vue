@@ -3,80 +3,80 @@
       <lc-title title="标签"></lc-title>
       <category title="默认使用"></category>
       <div class="tag-list">
-        <nut-tag v-for="(item,index) in demoData"
+        <lc-tag v-for="(item,index) in demoData"
                 :key="index"
-                v-bind="item"></nut-tag>
+                v-bind="item"></lc-tag>
       </div>
 
       <category title="文字标签配置"></category>
       <div class="sub-demo">
-        <nut-cell title="是否为实心">
-            <nut-switch slot="desc" @change="type= type==='solid' ?'hollow' : 'solid'"></nut-switch>         
-        </nut-cell>
+        <lc-cell title="是否为实心">
+            <lc-switch slot="desc" @change="type= type==='solid' ?'hollow' : 'solid'"></lc-switch>         
+        </lc-cell>
 
-        <nut-cell title="标签颜色">
+        <lc-cell title="标签颜色">
             <input class="input" slot="desc"
                     placeholder="请输入标签色值"
                     v-model="tagColor" />
-        </nut-cell>
-        <nut-cell title="文字颜色">
+        </lc-cell>
+        <lc-cell title="文字颜色">
             <input class="input" slot="desc"
                     placeholder="请输入文字色值"
                     v-model="fontColor" />
-            </nut-cell>
-        <nut-cell title="标签内容">
+            </lc-cell>
+        <lc-cell title="标签内容">
             <input class="input" slot="desc"
                     placeholder="请输入tag文字内容"
                     v-model="value" />
-        </nut-cell>
+        </lc-cell>
         <div class="demo1">
-            <nut-tag :type="type" 
+            <lc-tag :type="type" 
                 :tag-color="tagColor"
                 :font-color="fontColor"
-                v-model="value"></nut-tag>
+                v-model="value"></lc-tag>
         </div>
       </div>
 
       <category title="特殊标签配置"></category>
       <div class="sub-demo">
-        <nut-cell title="图片地址">
+        <lc-cell title="图片地址">
             <input class="input" slot="desc"
                     placeholder="请输入tag图片地址"
                     v-model="specialIcon" />
-        </nut-cell>
-        <nut-cell title="标签颜色">
+        </lc-cell>
+        <lc-cell title="标签颜色">
             <input class="input" slot="desc"
                     placeholder="请输入标签色值"
                     v-model="tagColor1" />
-        </nut-cell>
-        <nut-cell title="文字颜色">
+        </lc-cell>
+        <lc-cell title="文字颜色">
             <input class="input" slot="desc"
                     placeholder="请输入文字色值"
                     v-model="fontColor1" />
-        </nut-cell>
-        <nut-cell title="标签内容">
+        </lc-cell>
+        <lc-cell title="标签内容">
             <input class="input" slot="desc"
                     placeholder="请输入tag文字内容"
                     v-model="value1" />
-        </nut-cell>
+        </lc-cell>
         <div class="demo1">
-            <nut-tag type="special"
+            <lc-tag type="special"
                     :specialIcon="specialIcon"
                     :tag-color="tagColor1"
                     :font-color="fontColor1"
-                    v-model="value1"></nut-tag>
+                    v-model="value1"></lc-tag>
         </div>
       </div>
 
       <category title="图片标签配置"></category>
       <div class="sub-demo">
-        <nut-cell title="标签内容">
+        <lc-cell title="标签内容">
             <input class="input" slot="desc"
                     placeholder="请输入tag图片链接"
                     v-model="img" />
-        </nut-cell>
+        </lc-cell>
         <div class="demo1">
-            <nut-tag type="image" :img="img"></nut-tag>
+            <lc-tag type="image" :img="img"></lc-tag>
         </div>
       </div>
   </div>
@@ -118,10 +118,9 @@
   import Data from './tag-data'
   import LcTitle from '../../packages/_mods/title.vue';
   import Category from '../../packages/_mods/category.vue';
-  import nutTag from '../../packages/tag/index.vue';
 
   export default {
-    components: { LcTitle, Category, nutTag },
+    components: { LcTitle, Category },
     data: () => ({
       demoData:Data,
       type: 'solid',

@@ -2,43 +2,43 @@
   <div class="textinput-demo">
     <h4>基本用法</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-textinput v-model="val" label="基本用法：" placeholder="请输入内容" />
+          <lc-textinput v-model="val" label="基本用法：" placeholder="请输入内容" />
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">Value值： {{val}}</span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>配置</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-textinput :clearBtn="false" v-model="val2" label="无清空按钮：" placeholder="请输入内容" />
+          <lc-textinput :clearBtn="false" v-model="val2" label="无清空按钮：" placeholder="请输入内容" />
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-textinput :disabled="true" label="禁用状态：" placeholder="请输入内容" />
+          <lc-textinput :disabled="true" label="禁用状态：" placeholder="请输入内容" />
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-textinput placeholder="请输入密码" v-model="val3" label="密码框：" type="password" />
+          <lc-textinput placeholder="请输入密码" v-model="val3" label="密码框：" type="password" />
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-textinput placeholder="请输入内容" v-model="val4" label="无边框：" :hasBorder="false" />
+          <lc-textinput placeholder="请输入内容" v-model="val4" label="无边框：" :hasBorder="false" />
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>使用input原生属性</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-textinput
+          <lc-textinput
             placeholder="maxlength=5"
             maxlength="5"
             label="限制文字数："
@@ -46,18 +46,18 @@
             :hasBorder="false"
           />
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-textinput placeholder="请输入内容" v-model="val5" readonly label="只读：" :outline="false" />
+          <lc-textinput placeholder="请输入内容" v-model="val5" readonly label="只读：" :outline="false" />
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>使用input原生事件</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-textinput
+          <lc-textinput
             placeholder="请输入内容"
             label="focus/blur事件："
             @focus="onFocus"
@@ -66,18 +66,18 @@
             :hasBorder="false"
           />
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">事件触发结果：{{result}}</span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>自定义Class</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-textinput class="my-input" v-model="val7" placeholder="请输入搜索内容" />
+          <lc-textinput class="my-input" v-model="val7" placeholder="请输入搜索内容" />
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
   </div>
 </template>

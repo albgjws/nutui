@@ -2,70 +2,70 @@
     <div class="demo-list">
         <h4>基本用法(选择类)</h4>
         <div>
-            <nut-cell :showIcon="true" :isLink="true" @click.native="switchActionSheet('isVisible')">
+            <lc-cell :showIcon="true" :isLink="true" @click.native="switchActionSheet('isVisible')">
                 <span slot="title"><label>性别</label></span>
                 <div slot="desc" class="selected-option">{{sex}}</div>
-            </nut-cell>
-            <nut-cell :showIcon="true" :isLink="true" @click.native="switchActionSheet('isVisible1')">
+            </lc-cell>
+            <lc-cell :showIcon="true" :isLink="true" @click.native="switchActionSheet('isVisible1')">
                 <span slot="title"><label>年龄</label></span>
                 <span slot="sub-title">带取消按钮~~~~</span>
                 <div slot="desc" class="selected-option">{{agespec}}</div>
-            </nut-cell>
-            <nut-cell :showIcon="true" :isLink="true" @click.native="switchActionSheet('isVisible2')">
+            </lc-cell>
+            <lc-cell :showIcon="true" :isLink="true" @click.native="switchActionSheet('isVisible2')">
                 <span slot="title"><label>年龄</label></span>
                 <span slot="sub-title">高亮选中项~~~~</span>
                 <div slot="desc" class="selected-option">{{age}}</div>
-            </nut-cell>
-            <nut-cell :showIcon="true" :isLink="true" @click.native="switchActionSheet('isVisible3')">
+            </lc-cell>
+            <lc-cell :showIcon="true" :isLink="true" @click.native="switchActionSheet('isVisible3')">
                 <span slot="title"><label>星座</label></span>
                 <span slot="sub-title">设置列表项展示使用参数~~~~</span>
                 <div slot="desc" class="selected-option">{{constellation}}</div>
-            </nut-cell>
+            </lc-cell>
         </div>
         <h4>提示类</h4>
         <div>
-            <nut-cell  :isLink="true" @click.native="switchActionSheet('isVisible4')">
+            <lc-cell  :isLink="true" @click.native="switchActionSheet('isVisible4')">
                 <span slot="title"><label>我就列表测试数据</label></span>
                 <span slot="sub-title">我是描述~~~~</span>
                 <div slot="desc" class="selected-option">删除本条</div>
-            </nut-cell>
+            </lc-cell>
         </div>
         <h4>自定义类</h4>
         <div>
-            <nut-cell :isLink="true" @click.native="switchActionSheet('isVisible5')">
+            <lc-cell :isLink="true" @click.native="switchActionSheet('isVisible5')">
                 <span slot="title"><label>内容自定义</label></span>
                 <div slot="desc" class="selected-option">打开</div>
-            </nut-cell>
+            </lc-cell>
         </div>
         <!-- demo -->
-        <nut-actionsheet :is-visible="isVisible" 
+        <lc-actionsheet :is-visible="isVisible" 
             @close="switchActionSheet('isVisible')"
             :menu-items="menuItems"
             @choose="chooseItem"
-        ></nut-actionsheet>
+        ></lc-actionsheet>
         <!-- demo(带取消按钮） -->
-        <nut-actionsheet :is-visible="isVisible1" 
+        <lc-actionsheet :is-visible="isVisible1" 
             @close="switchActionSheet('isVisible1')"
             cancelTxt="取消"
             :menu-items="menuItems2"
             @choose="chooseItemAgeSpec"
-        ></nut-actionsheet>
+        ></lc-actionsheet>
         <!-- demo(高亮选中）-->
-        <nut-actionsheet :is-visible="isVisible2" 
+        <lc-actionsheet :is-visible="isVisible2" 
             :menu-items="menuItems2"
             :chooseTagValue="age"
             @close="switchActionSheet('isVisible2')"
             @choose="chooseItemAge"
-        ></nut-actionsheet>
+        ></lc-actionsheet>
         <!-- demo(设置列表项展示使用参数）-->
-        <nut-actionsheet :is-visible="isVisible3" 
+        <lc-actionsheet :is-visible="isVisible3" 
             :menu-items="menuItems3"
             :optionTag="`title`"
             @close="switchActionSheet('isVisible3')"
             @choose="chooseItemConstellation"
-        ></nut-actionsheet>
+        ></lc-actionsheet>
         <!-- demo 提示类 -->
-        <nut-actionsheet :is-visible="isVisible4" 
+        <lc-actionsheet :is-visible="isVisible4" 
             :menu-items="menuItems4" 
             :chooseTagValue="`确定`"
             cancelTxt="取消"
@@ -73,13 +73,13 @@
         >
             <span slot="title"><label>确定删除吗？</label></span>
             <span slot="sub-title">删除之后不能，描述信息，删除之后不能，描述信息</span>
-        </nut-actionsheet>
+        </lc-actionsheet>
         <!-- demo 自定义类 -->
-        <nut-actionsheet :is-visible="isVisible5" 
+        <lc-actionsheet :is-visible="isVisible5" 
             @close="switchActionSheet('isVisible5')"
         >
             <div slot="custom" class="custom-wrap"><span>自定义</span></div>
-        </nut-actionsheet>
+        </lc-actionsheet>
     </div>
 </template>
 

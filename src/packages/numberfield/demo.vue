@@ -5,14 +5,14 @@
     <category title="普通输入"></category>
     <div class="container">
       <div class="form">
-        <nut-numberfield type="number"  placeholder="最小金额10元" maxlength=10 ></nut-numberfield>
+        <lc-numberfield type="number"  placeholder="最小金额10元" maxlength=10 ></lc-numberfield>
       </div>
     </div>  
 
     <category title="显示货币"></category>
     <div class="container">
       <div class="form">
-        <nut-numberfield type="number" :showIcon="true" placeholder="最小金额10元" maxlength=10 v-model="money"></nut-numberfield>
+        <lc-numberfield type="number" :showIcon="true" placeholder="最小金额10元" maxlength=10 v-model="money"></lc-numberfield>
       </div>
     </div>
 

@@ -10,6 +10,16 @@
   "packages": [
     {
       "version": "1.0.0",
+      "name": "Slidermenu",
+      "sort": "2",
+      "chnName": "菜单联动",
+      "desc": "菜单联动",
+      "type": "component",
+      "showDemo": true,
+      "author": "Ryan"
+    },
+    {
+      "version": "1.0.0",
       "name": "Epslider",
       "sort": "2",
       "chnName": "滑动切换",
@@ -136,6 +146,16 @@
       "type": "component",
       "showDemo": true,
       "desc": "加载",
+      "author": "Ryan"
+    },
+    {
+      "name": "Partloading",
+      "version": "1.0.0",
+      "sort": "0",
+      "chnName": "局部加载",
+      "type": "component",
+      "showDemo": false,
+      "desc": "局部加载",
       "author": "Ryan"
     },
     {

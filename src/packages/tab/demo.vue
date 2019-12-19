@@ -2,55 +2,55 @@
   <div>
     <!-- DEMO区域 -->
     <h4>默认用法</h4>
-    <nut-tab @tab-switch="tabSwitch">
-      <nut-tab-panel
+    <lc-tab @tab-switch="tabSwitch">
+      <lc-tab-panel
         v-for="value in editableTabs"
         v-bind:key="value.tabTitle"
         :tabTitle="value.tabTitle"
         :iconUrl="value.iconUrl"
         v-html="value.content"
-      ></nut-tab-panel>
-    </nut-tab>
+      ></lc-tab-panel>
+    </lc-tab>
 
     <h4>支持导航条在上下左右位置</h4>
-    <nut-tab @tab-switch="tabSwitch" positionNav="left">
-      <nut-tab-panel
+    <lc-tab @tab-switch="tabSwitch" positionNav="left">
+      <lc-tab-panel
         v-for="value in editableTabs"
         v-bind:key="value.tabTitle"
         :tabTitle="value.tabTitle"
         :iconUrl="value.iconUrl"
         v-html="value.content"
-      ></nut-tab-panel>
-    </nut-tab>
-    <nut-tab @tab-switch="tabSwitch" positionNav="right">
-      <nut-tab-panel
+      ></lc-tab-panel>
+    </lc-tab>
+    <lc-tab @tab-switch="tabSwitch" positionNav="right">
+      <lc-tab-panel
         v-for="value in editableTabs"
         v-bind:key="value.tabTitle"
         :tabTitle="value.tabTitle"
         :iconUrl="value.iconUrl"
         v-html="value.content"
-      ></nut-tab-panel>
-    </nut-tab>
-    <nut-tab @tab-switch="tabSwitch" positionNav="bottom">
-      <nut-tab-panel
+      ></lc-tab-panel>
+    </lc-tab>
+    <lc-tab @tab-switch="tabSwitch" positionNav="bottom">
+      <lc-tab-panel
         v-for="value in editableTabs"
         v-bind:key="value.tabTitle"
         :tabTitle="value.tabTitle"
         :iconUrl="value.iconUrl"
         v-html="value.content"
-      ></nut-tab-panel>
-    </nut-tab>
+      ></lc-tab-panel>
+    </lc-tab>
 
     <h4>禁止选中，默认选中某个标签</h4>
-    <nut-tab :defIndex="1" class="customer-css" @tab-switch="tabSwitch" :contentShow="true">
-      <nut-tab-panel
+    <lc-tab :defIndex="1" class="customer-css" @tab-switch="tabSwitch" :contentShow="true">
+      <lc-tab-panel
         v-for="value in disableTabs"
         v-bind:key="value.tabTitle"
         :tabTitle="value.tabTitle"
         :disable="value.disable"
         v-html="value.content"
-      ></nut-tab-panel>
-    </nut-tab>
+      ></lc-tab-panel>
+    </lc-tab>
   </div>
 </template>
 

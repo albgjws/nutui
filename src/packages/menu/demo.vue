@@ -4,13 +4,13 @@
     <div class="list list1">
       <span slot="title" @click="switchMenu('isVisible1',1)" ref="title1">综合</span>
     </div>
-    <nut-menu
+    <lc-menu
       :isVisible="visible.isVisible1"
       :list="list1"
       type="simple"
       @close="switchMenu('isVisible1',1)"
       @choose="chooseMenu"
-    ></nut-menu>
+    ></lc-menu>
 
     <h4>多选style1(一、二、三)列</h4>
     <div class="list list2">
@@ -18,7 +18,7 @@
       <span slot="title" @click="switchMenu('isVisible3',2)" ref="title3">京东物流</span>
       <span slot="title" @click="switchMenu('isVisible4',2)" ref="title4">京东物流</span>
     </div>
-    <nut-menu
+    <lc-menu
       :isVisible="visible.isVisible2"
       :list="list2"
       col="1"
@@ -27,8 +27,8 @@
       @reset="reset"
       @ok="ok"
       @maxTip="maxTip"
-    ></nut-menu>
-    <nut-menu
+    ></lc-menu>
+    <lc-menu
       :isVisible="visible.isVisible3"
       :list="list2"
       col="2"
@@ -37,8 +37,8 @@
       @reset="reset"
       @ok="ok"
       @maxTip="maxTip"
-    ></nut-menu>
-    <nut-menu
+    ></lc-menu>
+    <lc-menu
       :isVisible="visible.isVisible4"
       :list="list2"
       col="3"
@@ -47,7 +47,7 @@
       @reset="reset"
       @ok="ok"
       @maxTip="maxTip"
-    ></nut-menu>
+    ></lc-menu>
 
     <h4>多选style2(一、二、三)列</h4>
     <div class="list list3">
@@ -55,7 +55,7 @@
       <span slot="title" @click="switchMenu('isVisible6',3)" ref="title6">1级</span>
       <span slot="title" @click="switchMenu('isVisible7',3)" ref="title7">1级</span>
     </div>
-    <nut-menu
+    <lc-menu
       :isVisible="visible.isVisible5"
       :list="list3"
       mulstyle="style2"
@@ -65,8 +65,8 @@
       @reset="reset"
       @ok="ok"
       @maxTip="maxTip"
-    ></nut-menu>
-    <nut-menu
+    ></lc-menu>
+    <lc-menu
       :isVisible="visible.isVisible6"
       :list="list3"
       mulstyle="style2"
@@ -76,8 +76,8 @@
       @reset="reset"
       @ok="ok"
       @maxTip="maxTip"
-    ></nut-menu>
-    <nut-menu
+    ></lc-menu>
+    <lc-menu
       :isVisible="visible.isVisible7"
       :list="list3"
       mulstyle="style2"
@@ -87,7 +87,7 @@
       @reset="reset"
       @ok="ok"
       @maxTip="maxTip"
-    ></nut-menu>
+    ></lc-menu>
 
     <h4>多选style3(一、二、三)列,最多选择3个</h4>
     <div class="list list4">
@@ -95,7 +95,7 @@
       <span slot="title" @click="switchMenu('isVisible9',4)" ref="title9">海尔（Haier）</span>
       <span slot="title" @click="switchMenu('isVisible10',4)" ref="title10">海尔（Haier）</span>
     </div>
-    <nut-menu
+    <lc-menu
       :isVisible="visible.isVisible8"
       :list="list4"
       type="multiple"
@@ -106,8 +106,8 @@
       @reset="reset"
       @ok="ok"
       @maxTip="maxTip"
-    ></nut-menu>
-    <nut-menu
+    ></lc-menu>
+    <lc-menu
       :isVisible="visible.isVisible9"
       :list="list4"
       type="multiple"
@@ -118,8 +118,8 @@
       @reset="reset"
       @ok="ok"
       @maxTip="maxTip"
-    ></nut-menu>
-    <nut-menu
+    ></lc-menu>
+    <lc-menu
       :isVisible="visible.isVisible10"
       :list="list4"
       type="multiple"
@@ -130,17 +130,17 @@
       @reset="reset"
       @ok="ok"
       @maxTip="maxTip"
-    ></nut-menu>
+    ></lc-menu>
 
     <h4>自定义菜单</h4>
     <div class="list list5">
       <span slot="title" @click="switchMenu('isVisible11',5)">自定义</span>
     </div>
-    <nut-menu :isVisible="visible.isVisible11" @close="switchMenu('isVisible11',5)">
+    <lc-menu :isVisible="visible.isVisible11" @close="switchMenu('isVisible11',5)">
       <div slot="custom" class="custom-wrap">
         <span>自定义</span>
       </div>
-    </nut-menu>
+    </lc-menu>
   </div>
 </template>
 

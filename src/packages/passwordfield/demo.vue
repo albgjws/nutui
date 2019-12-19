@@ -6,14 +6,14 @@
     <category title="密码输入域(默认不显示密码)"></category>
     <div class="container">
       <div class="form">
-        <nut-passwordfield type="password" :autofocus="true"></nut-passwordfield>
+        <lc-passwordfield type="password" :autofocus="true"></lc-passwordfield>
       </div>
     </div>  
 
     <category title="密码输入域(显示密码)"></category>
     <div class="container">
       <div class="form">
-        <nut-passwordfield type="password" :pwdShow="true" ></nut-passwordfield>
+        <lc-passwordfield type="password" :pwdShow="true" ></lc-passwordfield>
       </div>
     </div>
 

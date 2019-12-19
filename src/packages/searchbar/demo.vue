@@ -2,33 +2,33 @@
 	<div class="s-bar demo-list">
 		<h4>基本用法</h4>
 		<div class="demo1">
-    		<nut-searchbar></nut-searchbar>
+    		<lc-searchbar></lc-searchbar>
     	</div>
 		<p>右侧搜索按钮可根据需要进行配置</p>
     	<div class="demo1">
-    		<nut-searchbar
+    		<lc-searchbar
 		        placeText="请输入自定义文案"
 		        :hasSearchButton="false"
-	        ></nut-searchbar>
+	        ></lc-searchbar>
     	</div>
     	<p>可配置输入框前面是否显示搜索图标、右侧是否显示文字按钮、显示文字、自定义 class</p>
     	<div class="demo1">
-    		<nut-searchbar
+    		<lc-searchbar
 		        placeText="ERP/姓名/邮箱"
 		        :hasIcon="true"
 		        :hasTextButton="true"
 		        customClass="search_demo"
-	        ></nut-searchbar>
+	        ></lc-searchbar>
     	</div>
         <h4>事件</h4>
         <div class="demo1">
-            <nut-searchbar
+            <lc-searchbar
 		        placeText="请输入自定义文案"
 		        @focus="focusFun"
 		        @input="inputFun"
 		        @blur="blurFun"
 		        @submit="submitFun"
-	        ></nut-searchbar>
+	        ></lc-searchbar>
         </div>
     </div>
 </template>

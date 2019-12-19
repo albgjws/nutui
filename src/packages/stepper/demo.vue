@@ -2,54 +2,54 @@
   <div class="demo-list">
     <h4>默认用法</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-stepper @focus="focus" :blur="blur" :value.sync="val1" :max="12" :step="0.1" :decimalPlaces="1" @add="add"></nut-stepper>
+          <lc-stepper @focus="focus" :blur="blur" :value.sync="val1" :max="12" :step="0.1" :decimalPlaces="1" @add="add"></lc-stepper>
         </span>
         <span slot="desc">
           value: {{val1}} <button @click="reduce" class="demo-btn">-</button> <button @click="add" class="demo-btn">+</button> 
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>设置最大最小值</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-stepper :value.sync="val2" :min="5" :max="100"></nut-stepper>
+          <lc-stepper :value.sync="val2" :min="5" :max="100"></lc-stepper>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>设置加减的步长</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-stepper :value.sync="val3" :step="5"></nut-stepper>
+          <lc-stepper :value.sync="val3" :step="5"></lc-stepper>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>设置只读</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-stepper :value.sync="val4" readonly></nut-stepper>
+          <lc-stepper :value.sync="val4" readonly></lc-stepper>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>显示边框</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-stepper :value.sync="val5" :simple="false"></nut-stepper>
+          <lc-stepper :value.sync="val5" :simple="false"></lc-stepper>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>关闭动画过渡</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-stepper :value.sync="val6" :transition="false" :simple="false" :max="999"></nut-stepper>
+          <lc-stepper :value.sync="val6" :transition="false" :simple="false" :max="999"></lc-stepper>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     
   </div>

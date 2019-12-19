@@ -1,10 +1,10 @@
 <template>
   <div class="demo-list-wrapper">
-    <a href="https://github.com/jdf2e/nutui/" target="_blank" class="github-btn">Github</a>
+    <!-- <a href="https://github.com/jdf2e/nutui/" target="_blank" class="github-btn">Github</a> -->
 
     <h1 class="logo"></h1>
-    <div class="version">NutUI 2.0</div>
-    <p>一套京东风格的移动端Vue组件库</p>
+    <div class="version">Lighting UI</div>
+    <p>一个富交互、轻量级、高性能的金融UI组件库</p>
     <div :class="['demo-list-box',{'unfold':foldStatus[item]}]" v-for="item in sorts" :key="item">
       <h4 @click="toggleFold(item)">
         {{oriSorts[item]}}
@@ -16,13 +16,13 @@
             <a :href="'./demo.html#/'+cpt.name">
               {{cpt.name}}
               <span>{{cpt.chnName}}</span>
-              <nut-rate class="cpt-rec" v-if="cpt.star" :total="5" :value="cpt.star" :size="8" :spacing="3" :readOnly="true"></nut-rate>
+              <lc-rate class="cpt-rec" v-if="cpt.star" :total="5" :value="cpt.star" :size="8" :spacing="3" :readOnly="true"></lc-rate>
             </a>
           </li>
         </template>
       </ul>
     </div>
-    <div id="demo-footer">京东用户体验设计部（JDC） · 前端开发部 · v{{version}}</div>
+    <!-- <div id="demo-footer">京东用户体验设计部（JDC） · 前端开发部 · v{{version}}</div> -->
   </div>
 </template>
 

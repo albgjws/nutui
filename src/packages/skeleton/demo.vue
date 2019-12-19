@@ -1,6 +1,6 @@
 <template>
     <div >
-    <nut-skeleton class="my-skeleton">
+    <lc-skeleton class="my-skeleton">
         
         <row padding="15px 10px 0 ">
 
@@ -35,7 +35,7 @@
                 <skeleton-square width="30px" height="30px" v-for=" i in 5" :key="i" margin="15px"></skeleton-square>
             </row>
         
-    </nut-skeleton>
+    </lc-skeleton>
     </div>
   
 </template>

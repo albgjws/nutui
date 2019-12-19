@@ -1,9 +1,9 @@
 <template>
   <div>
-    <nut-overlay :show="show&&haveOverlay"
+    <lc-overlay :show="show&&haveOverlay"
                   ref="overlay"
                   v-bind="overlayCfg"
-                  @LcOverlayBodyClicked="LcOverlayBodyClicked"></nut-overlay>
+                  @LcOverlayBodyClicked="LcOverlayBodyClicked"></lc-overlay>
     <transition :name="transition">
       <div ref="lc-popup" @scroll.prevent
           v-if="show"

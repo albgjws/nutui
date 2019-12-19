@@ -4,7 +4,7 @@
       <lc-title title="折叠列表"></lc-title>
       <category title="折叠列表"></category>
 
-      <nut-fold-list
+      <lc-fold-list
         :title="'折叠列表测试'"
         :desc="'更多'"
         :folded="true"
@@ -14,9 +14,9 @@
         <div slot="foldContent">
           <span>hello</span>
         </div>
-      </nut-fold-list>
+      </lc-fold-list>
 
-      <nut-fold-list
+      <lc-fold-list
         :title="'折叠列表测试2'"
         :desc="'更多2'"
         :folded="false"
@@ -25,7 +25,7 @@
         <div slot="foldContent">
           <span>这是另外一个折叠列表</span>
         </div>
-      </nut-fold-list>
+      </lc-fold-list>
   </div>
 </template>
 

@@ -2,66 +2,66 @@
     <div class="demo-list">
         <h4>基本用法</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-checkboxgroup  :checkBoxData="data1" v-model="group1"></nut-checkboxgroup></span>
-            </nut-cell>
+            <lc-cell>
+                <span slot="title"><lc-checkboxgroup  :checkBoxData="data1" v-model="group1"></lc-checkboxgroup></span>
+            </lc-cell>
             <p>{{group1}}</p>
         </div>
 
         <h4>禁用状态</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-checkboxgroup  :checkBoxData="data2" v-model="group2"></nut-checkboxgroup></span>
-            </nut-cell>
+            <lc-cell>
+                <span slot="title"><lc-checkboxgroup  :checkBoxData="data2" v-model="group2"></lc-checkboxgroup></span>
+            </lc-cell>
         </div>
         <h4>自定义尺寸</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-checkboxgroup  :size="'small'" :checkBoxData="data3" v-model="group3"></nut-checkboxgroup></span>
+            <lc-cell>
+                <span slot="title"><lc-checkboxgroup  :size="'small'" :checkBoxData="data3" v-model="group3"></lc-checkboxgroup></span>
                 
-            </nut-cell>
-            <nut-cell>
-                <span slot="title"><nut-checkboxgroup   :size="'base'" :checkBoxData="data3" v-model="group4"></nut-checkboxgroup></span>
+            </lc-cell>
+            <lc-cell>
+                <span slot="title"><lc-checkboxgroup   :size="'base'" :checkBoxData="data3" v-model="group4"></lc-checkboxgroup></span>
                 
-            </nut-cell>
-            <nut-cell>
-                <span slot="title"><nut-checkboxgroup   :checkBoxData="data33" :size="'small'" v-model="group5"></nut-checkboxgroup></span>
+            </lc-cell>
+            <lc-cell>
+                <span slot="title"><lc-checkboxgroup   :checkBoxData="data33" :size="'small'" v-model="group5"></lc-checkboxgroup></span>
                 
-            </nut-cell>
+            </lc-cell>
             <p>size可选值：'small', 'base', 'large'</p>
             <p>data设置size属性高于标签size</p>
         </div>
         <h4>禁用动效</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-checkboxgroup  :checkBoxData="['选项1','选项2']" v-model="group6"  :animation="false" ></nut-checkboxgroup></span>
+            <lc-cell>
+                <span slot="title"><lc-checkboxgroup  :checkBoxData="['选项1','选项2']" v-model="group6"  :animation="false" ></lc-checkboxgroup></span>
 
-            </nut-cell>
+            </lc-cell>
             <p>选择状态：{{group6}}</p>
             <p>animation属性值为false时，禁用自带动效 </p>
         </div>
         <h4>横向排列</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-checkboxgroup :checkBoxData="data5"  v-model="group7" :vertical="true"></nut-checkboxgroup></span>
-            </nut-cell>
+            <lc-cell>
+                <span slot="title"><lc-checkboxgroup :checkBoxData="data5"  v-model="group7" :vertical="true"></lc-checkboxgroup></span>
+            </lc-cell>
             
             <p>avertical属性值为true时，横向排列 </p>
             <p>状态：label值与选中value值不同时，{{group7}}</p>
         </div>
         <h4>事件</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-checkboxgroup :checkBoxData="data6" v-model="group0" @change="changeEvt"></nut-checkboxgroup></span>
-            </nut-cell>
+            <lc-cell>
+                <span slot="title"><lc-checkboxgroup :checkBoxData="data6" v-model="group0" @change="changeEvt"></lc-checkboxgroup></span>
+            </lc-cell>
             <p>选择状态：{{group0}}</p>
             <p>值发生变化时，将触发change事件</p>
         </div>
         <h4>自定义样式</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-checkboxgroup  :customClass="'my-checkbox'" :checkBoxData="data7" v-model="group8"></nut-checkboxgroup></span>
-            </nut-cell>
+            <lc-cell>
+                <span slot="title"><lc-checkboxgroup  :customClass="'my-checkbox'" :checkBoxData="data7" v-model="group8"></lc-checkboxgroup></span>
+            </lc-cell>
            
         </div>
     </div>

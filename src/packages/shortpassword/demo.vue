@@ -1,24 +1,24 @@
 <template>
   <div class="demo-list">
     <h4>底部短密码</h4>
-    <nut-cell :isLink="true" @click.native="showShortpwd" :showIcon="true" title="打开短密码框"></nut-cell>
-    <nut-shortpassword
+    <lc-cell :isLink="true" @click.native="showShortpwd" :showIcon="true" title="打开短密码框"></lc-cell>
+    <lc-shortpassword
       :visible="isShow"
       @close="shortpwdClose"
       type="bottom"
       link="https://m.jd.com"
-    ></nut-shortpassword>
-    <nut-cell>
+    ></lc-shortpassword>
+    <lc-cell>
       <span slot="title">您输入的密码是:{{val1}}</span>
-    </nut-cell>
+    </lc-cell>
 
     <h4>居中短密码</h4>
-    <nut-cell :isLinke="true" @click.native="showShortpwd2" :showIcon="true" title="打开短密码框"></nut-cell>
-    <nut-cell>
+    <lc-cell :isLinke="true" @click.native="showShortpwd2" :showIcon="true" title="打开短密码框"></lc-cell>
+    <lc-cell>
       <span slot="title">您输入的密码是：{{val2}}</span>
-    </nut-cell>
+    </lc-cell>
 
-    <nut-shortpassword :visible="isShow2" @close="shortpwdClose2" type="center"></nut-shortpassword>
+    <lc-shortpassword :visible="isShow2" @close="shortpwdClose2" type="center"></lc-shortpassword>
   </div>
 </template>
 

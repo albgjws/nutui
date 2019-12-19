@@ -1,21 +1,21 @@
 <template>
   <div>
     <h4>正常流程</h4>
-    <nut-steps :current="current">
-      <nut-step title="已完成" content></nut-step>
-      <nut-step title content="这里是该步骤的描述信息"></nut-step>
-      <nut-step title="进行中" content="这里是该步骤的描述信息"></nut-step>
-      <nut-step title="待进行" content="这里是该步骤的描述信息"></nut-step>
-      <nut-step title="待进行" content="这里是该步骤的描述信息"></nut-step>
-    </nut-steps>
+    <lc-steps :current="current">
+      <lc-step title="已完成" content></lc-step>
+      <lc-step title content="这里是该步骤的描述信息"></lc-step>
+      <lc-step title="进行中" content="这里是该步骤的描述信息"></lc-step>
+      <lc-step title="待进行" content="这里是该步骤的描述信息"></lc-step>
+      <lc-step title="待进行" content="这里是该步骤的描述信息"></lc-step>
+    </lc-steps>
     <h4>流程终止</h4>
-    <nut-steps :current="current" status="error">
-      <nut-step title="已完成" content="这里是该步骤的描述信息"></nut-step>
-      <nut-step title="已完成" content="这里是该步骤的描述信息"></nut-step>
-      <nut-step title="进行中" content="这里是该步骤的描述信息"></nut-step>
-      <nut-step title="待进行" content="这里是该步骤的描述信息"></nut-step>
-      <nut-step title="待进行" content="这里是该步骤的描述信息"></nut-step>
-    </nut-steps>
+    <lc-steps :current="current" status="error">
+      <lc-step title="已完成" content="这里是该步骤的描述信息"></lc-step>
+      <lc-step title="已完成" content="这里是该步骤的描述信息"></lc-step>
+      <lc-step title="进行中" content="这里是该步骤的描述信息"></lc-step>
+      <lc-step title="待进行" content="这里是该步骤的描述信息"></lc-step>
+      <lc-step title="待进行" content="这里是该步骤的描述信息"></lc-step>
+    </lc-steps>
   </div>
 </template>
 

@@ -3,32 +3,32 @@
       <lc-title title="信息列表"></lc-title>
       <category title="图文结合"></category>
       
-      <nut-info-list 
+      <lc-info-list 
         type="imgleft"
         :infoList="infoList"
         @infoClick="infoClick"
-      ></nut-info-list>
+      ></lc-info-list>
 
-      <nut-info-list 
+      <lc-info-list 
         type="imgright"
         :infoList="infoList"
         :timeStyle='timeStyle'
         @infoClick="infoClick"
-      ></nut-info-list>
+      ></lc-info-list>
 
       <category title="纯文本"></category>
-      <nut-info-list 
+      <lc-info-list 
         type="text"
         :infoList="infoList1"
         @infoClick="infoClick"
-      ></nut-info-list>
+      ></lc-info-list>
 
-      <nut-info-list 
+      <lc-info-list 
         type="text"
         :line="2"
         :infoList="infoList1"
         @infoClick="infoClick"
-      ></nut-info-list>
+      ></lc-info-list>
   </div>
 </template>
 

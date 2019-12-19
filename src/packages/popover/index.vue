@@ -5,9 +5,9 @@
          v-if="show"
          @click="hideAction"
          :style="coverStyle"></div> -->
-      <nut-overlay :show="showIn"
+      <lc-overlay :show="showIn"
                   @LcOverlayBodyClicked="hideAction()"
-                  :hasAnimation="hasAnimation"></nut-overlay>   
+                  :hasAnimation="hasAnimation"></lc-overlay>   
       <transition :name="hasAnimation? transition:''">
           <div ref="lc-popover"
               class="g-popover"

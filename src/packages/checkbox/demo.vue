@@ -2,100 +2,100 @@
   <div class="demo-list">
     <h4>基本用法</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox v-model="checkbox1" @change="changeBox1">选项</nut-checkbox>
+          <lc-checkbox v-model="checkbox1" @change="changeBox1">选项</lc-checkbox>
         </span>
         <span slot="desc">复选按钮checked：{{checkbox1}}</span>
-      </nut-cell>
+      </lc-cell>
     </div>
 
     <h4>禁用状态</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox v-model="checkbox2" disabled>未选时禁用状态</nut-checkbox>
+          <lc-checkbox v-model="checkbox2" disabled>未选时禁用状态</lc-checkbox>
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox v-model="checkbox3" disabled>已选时禁用状态</nut-checkbox>
+          <lc-checkbox v-model="checkbox3" disabled>已选时禁用状态</lc-checkbox>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
 
     <h4>自定义尺寸</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox v-model="checkbox4" size="small">小号1</nut-checkbox>
+          <lc-checkbox v-model="checkbox4" size="small">小号1</lc-checkbox>
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox v-model="checkbox5" size="base">默认</nut-checkbox>
+          <lc-checkbox v-model="checkbox5" size="base">默认</lc-checkbox>
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox v-model="checkbox6" size="large">大号</nut-checkbox>
+          <lc-checkbox v-model="checkbox6" size="large">大号</lc-checkbox>
         </span>
-      </nut-cell>
+      </lc-cell>
 
       <p>size可选值：'small', 'base', 'large'</p>
     </div>
 
     <h4>禁用动效</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox v-model="checkbox7" :animation="false">没有动效</nut-checkbox>
+          <lc-checkbox v-model="checkbox7" :animation="false">没有动效</lc-checkbox>
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox v-model="checkbox8" :animation="false">没有动效</nut-checkbox>
+          <lc-checkbox v-model="checkbox8" :animation="false">没有动效</lc-checkbox>
         </span>
-      </nut-cell>
+      </lc-cell>
       <p>animation属性值为false时，禁用自带动效</p>
     </div>
 
     <h4>事件</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox v-model="checkbox9" :label="'change事件'" @change="checkboxChange">备选项</nut-checkbox>
+          <lc-checkbox v-model="checkbox9" :label="'change事件'" @change="checkboxChange">备选项</lc-checkbox>
         </span>
         <span slot="desc">{{result}}</span>
-      </nut-cell>
+      </lc-cell>
       <p>值发生变化时，将触发change事件</p>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox v-model="checkbox10" :label="'选项值1'" @change="getChange">change事件</nut-checkbox>
+          <lc-checkbox v-model="checkbox10" :label="'选项值1'" @change="getChange">change事件</lc-checkbox>
         </span>
         <span slot="desc">{{result2}}</span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox v-model="checkbox11" :label="'选项值2'" @change="getChange2">change事件</nut-checkbox>
+          <lc-checkbox v-model="checkbox11" :label="'选项值2'" @change="getChange2">change事件</lc-checkbox>
         </span>
         <span slot="desc">{{result3}}</span>
-      </nut-cell>
+      </lc-cell>
       <p>设置label时，可获取选项label值</p>
     </div>
 
     <h4>自定义Class</h4>
     <div>
-      <nut-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox class="my-checkbox" v-model="checkbox12">自定义Class:"my-checkbox"</nut-checkbox>
+          <lc-checkbox class="my-checkbox" v-model="checkbox12">自定义Class:"my-checkbox"</lc-checkbox>
         </span>
-      </nut-cell>
-      <nut-cell>
+      </lc-cell>
+      <lc-cell>
         <span slot="title">
-          <nut-checkbox class="my-checkbox" v-model="checkbox13">自定义Class:"my-checkbox"</nut-checkbox>
+          <lc-checkbox class="my-checkbox" v-model="checkbox13">自定义Class:"my-checkbox"</lc-checkbox>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
   </div>
 </template>

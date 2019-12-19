@@ -2,99 +2,99 @@
   <div class="demo-list">
     <h4>基本用法</h4>
     <div>
-      <nut-cell :isLink="true" :showIcon="true" @click.native="showDialog1">
+      <lc-cell :isLink="true" :showIcon="true" @click.native="showDialog1">
         <span slot="title">
           <label>自定义标题和内容</label>
         </span>
-      </nut-cell>
-      <nut-cell :isLink="true" :showIcon="true" @click.native="showDialog2">
+      </lc-cell>
+      <lc-cell :isLink="true" :showIcon="true" @click.native="showDialog2">
         <span slot="title">
           <label>只有标题</label>
         </span>
-      </nut-cell>
-      <nut-cell :isLink="true" :showIcon="true" @click.native="showDialog3">
+      </lc-cell>
+      <lc-cell :isLink="true" :showIcon="true" @click.native="showDialog3">
         <span slot="title">
           <label>只有内容</label>
         </span>
-      </nut-cell>
-      <nut-cell :isLink="true" :showIcon="true" @click.native="showDialog4">
+      </lc-cell>
+      <lc-cell :isLink="true" :showIcon="true" @click.native="showDialog4">
         <span slot="title">
           <label>移除按钮栏</label>
         </span>
-      </nut-cell>
-      <nut-cell :isLink="true" :showIcon="true" @click.native="showDialog5">
+      </lc-cell>
+      <lc-cell :isLink="true" :showIcon="true" @click.native="showDialog5">
         <span slot="title">
           <label>事件</label>
         </span>
-      </nut-cell>
-      <nut-cell :isLink="true" :showIcon="true" @click.native="showDialog6">
+      </lc-cell>
+      <lc-cell :isLink="true" :showIcon="true" @click.native="showDialog6">
         <span slot="title">
           <label>无弹出动效</label>
         </span>
-      </nut-cell>
-      <nut-cell :isLink="true" :showIcon="true" @click.native="showDialog7">
+      </lc-cell>
+      <lc-cell :isLink="true" :showIcon="true" @click.native="showDialog7">
         <span slot="title">
           <label>遮罩层透明</label>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>图片弹窗</h4>
     <p>type值为“image”时为图片弹窗，需要配置一张图片，可带链接（非必须）。默认展示关闭按钮。点击图片触发onClickImageLink事件，返回false可阻止默认的跳转链接行为。</p>
     <div>
-      <nut-cell :isLink="true" :showIcon="true" @click.native="showImageDialog">
+      <lc-cell :isLink="true" :showIcon="true" @click.native="showImageDialog">
         <span slot="title">
           <label>图片弹窗</label>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>背景滚动锁定</h4>
     <p>lockBgScroll值设为true时，可在弹窗出现时锁定页面滚动，且不影响窗体内部滚动。</p>
     <div>
-      <nut-cell :isLink="true" :showIcon="true" @click.native="showDialog8">
+      <lc-cell :isLink="true" :showIcon="true" @click.native="showDialog8">
         <span slot="title">
           <label>背景滚动锁定</label>
         </span>
-      </nut-cell>
-      <nut-cell :isLink="true" :showIcon="true" @click.native="showDialog9">
+      </lc-cell>
+      <lc-cell :isLink="true" :showIcon="true" @click.native="showDialog9">
         <span slot="title">
           <label>窗体内部滚动不影响页面滚动</label>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <h4>高级用法</h4>
     <p>如果Dialog内容有复杂交互，可使用Dialog的标签式用法。</p>
     <div>
-      <nut-cell :isLink="true" :showIcon="true" @click.native="dialogShow=true">
+      <lc-cell :isLink="true" :showIcon="true" @click.native="dialogShow=true">
         <span slot="title">
           <label>以标签形式调用Dialog</label>
         </span>
-      </nut-cell>
+      </lc-cell>
     </div>
     <!-- 以标签形式调用Dialog -->
-    <nut-dialog title="标签形式调用" :visible="dialogShow" :cancelAutoClose="false" @ok-btn-click="dialogShow=false" @cancel-btn-click="dialogShow=false" @close="dialogShow=false">
+    <lc-cell title="标签形式调用" :visible="dialogShow" :cancelAutoClose="false" @ok-btn-click="dialogShow=false" @cancel-btn-click="dialogShow=false" @close="dialogShow=false">
       
       <a href="javascript:;" @click="dialogShow=false" :noCancelBtn="true">点我可以直接关闭对话框</a>
-    </nut-dialog>
-    <nut-actionsheet :is-visible="isEditor" > 
+    </lc-cell>
+    <lc-actionsheet :is-visible="isEditor" > 
       <div slot="custom"> 
-        <nut-cell title="选择货品" :showIcon="true" :isLink="true" @click.native="isItem=true"> 
+        <lc-cell title="选择货品" :showIcon="true" :isLink="true" @click.native="isItem=true"> 
           <div slot="desc" class="selected-option">{{item.name!='' ? item.name : '请选择'}}</div>
-        </nut-cell> 
-        <nut-cell :isLink="true" > 
+        </lc-cell> 
+        <lc-cell :isLink="true" > 
           <div slot="title" class="selected-option">
-          <nut-textinput v-model="item.num" :hasBorder="false" placeholder="请输入数量" :clearBtn="true" :disabled="false"/> </div> 
-        </nut-cell>
-        <nut-cell :isLink="true" > 
+          <lc-textinput v-model="item.num" :hasBorder="false" placeholder="请输入数量" :clearBtn="true" :disabled="false"/> </div> 
+        </lc-cell>
+        <lc-cell :isLink="true" > 
            <div slot="title" class="selected-option"> 
-             <nut-textinput v-model="item.price" :hasBorder="false" placeholder="请输入价格" :clearBtn="true" :disabled="false"/> 
+             <lc-textinput v-model="item.price" :hasBorder="false" placeholder="请输入价格" :clearBtn="true" :disabled="false"/> 
           </div> 
-        </nut-cell> 
-        <nut-buttongroup shape="circle" style="margin-top:10px;padding:10px;">
-           <nut-button color="#333" style="background:#eee" @click.native="isEditor=false"> 取消 </nut-button> 
-           <nut-button style="background:#42b983" @click.native="addItem"> 确定 </nut-button> 
-        </nut-buttongroup>
+        </lc-cell> 
+        <lc-buttongroup shape="circle" style="margin-top:10px;padding:10px 0;">
+           <lc-button color="#333" style="background:#eee" @click.native="isEditor=false"> 取消 </lc-button> 
+           <lc-button style="background:#42b983" @click.native="addItem"> 确定 </lc-button> 
+        </lc-buttongroup>
       </div> 
-    </nut-actionsheet>
+    </lc-actionsheet>
   </div>
 </template>
 

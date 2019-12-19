@@ -5,14 +5,14 @@
     <category title="普通输入"></category>
     <div class="container">
       <div class="form">
-        <nut-textfield type="number"></nut-textfield>
+        <lc-textfield type="number"></lc-textfield>
       </div>
     </div>  
 
     <category title="输入值监听"></category>
     <div class="container">
       <div class="form">
-        <nut-textfield v-model="value1"></nut-textfield>
+        <lc-textfield v-model="value1"></lc-textfield>
       </div>
     </div>
 

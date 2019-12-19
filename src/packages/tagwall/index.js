@@ -1,7 +1,7 @@
-import TagWall from './index.vue';
+import Tagwall from './index.vue';
 
-TagWall.install = function (Vue) {
-    Vue.component(TagWall.name, TagWall);
+Tagwall.install = function (Vue) {
+    Vue.component(Tagwall.name, Tagwall);
 };
 
-export default TagWall
+export default Tagwall

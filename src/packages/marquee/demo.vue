@@ -5,11 +5,11 @@
         <category title="跑马灯"></category>
 
             
-        <nut-marquee 
+        <lc-marquee 
             :marqueeList="marqueeList" 
             :marqueeStyle="marqueeStyle" 
             :interval="3000">
-        </nut-marquee>
+        </lc-marquee>
 
     </div>
 </template>

@@ -2,51 +2,51 @@
     <div>
         <h4>基本用法</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-rate v-model="val"></nut-rate></span>
-            </nut-cell>
-            <nut-cell>
+            <lc-cell>
+                <span slot="title"><lc-rate v-model="val"></lc-rate></span>
+            </lc-cell>
+            <lc-cell>
                 <span slot="title">当前分数：{{val}}分</span>
-            </nut-cell>
+            </lc-cell>
         </div>
 
         <h4>只读</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-rate v-model="val2" :readOnly="true"></nut-rate></span>
-            </nut-cell>
-            <nut-cell>
+            <lc-cell>
+                <span slot="title"><lc-rate v-model="val2" :readOnly="true"></lc-rate></span>
+            </lc-cell>
+            <lc-cell>
                 <span slot="title">结果：{{val2}}</span>
-            </nut-cell>
+            </lc-cell>
         </div>
 
         <h4>自定义尺寸</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-rate
+            <lc-cell>
+                <span slot="title"><lc-rate
                 :size="30"
-                ></nut-rate></span>
-            </nut-cell>
+                ></lc-rate></span>
+            </lc-cell>
         </div>
 
         <h4>事件</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-rate @click="onClick"></nut-rate></span>
-            </nut-cell>
-            <nut-cell>
+            <lc-cell>
+                <span slot="title"><lc-rate @click="onClick"></lc-rate></span>
+            </lc-cell>
+            <lc-cell>
                 <span slot="title">结果：{{result}}</span>
-            </nut-cell>
+            </lc-cell>
         </div>
 
         <h4>自定义ICON</h4>
         <div>
-            <nut-cell>
-                <span slot="title"><nut-rate
+            <lc-cell>
+                <span slot="title"><lc-rate
                 :checkedIcon="icon1"
                 :uncheckedIcon="icon2"
-                ></nut-rate></span>
-            </nut-cell>
+                ></lc-rate></span>
+            </lc-cell>
         </div>
         
     </div>
