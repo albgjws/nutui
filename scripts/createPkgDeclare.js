@@ -7,8 +7,8 @@ const {default: generate} = require('@babel/generator');
 
 const PKGS = 'packages';
 const emptyLine = '/*hr*/';
-const nutMainFile = path.join(__dirname, '../src/nutui.js');
-const nutTypings = path.join(__dirname, '../types/nutui.d.ts');
+const nutMainFile = path.join(__dirname, '../src/lightui.js');
+const nutTypings = path.join(__dirname, '../types/lightui.d.ts');
 
 function transformCodes(codes, visitor) {
     const ast = parse(codes, {

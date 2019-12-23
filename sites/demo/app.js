@@ -5,7 +5,7 @@ import App from './App.vue';
 import router from './router';
 import mixin from './view/mixin.js';
 import Conf from '../../src/config.json';
-import NutUI from '../../src/nutui';
+import LightUI from '../../src/lightui';
 // import en from '../../src/locales/lang/en-US';
 // import demoEN from './lang/en-US';
 
@@ -21,12 +21,12 @@ Vue.config.productionTip = false;
 
 // Object.assign(en, demoEN);
 
-// Vue.use(NutUI, {
+// Vue.use(LightUI, {
 //   locale: 'en-US',
 //   lang: en
 // });
 
-NutUI.install(Vue);
+LightUI.install(Vue);
 
 
 //Vue.locale = () => {};

@@ -1,3 +1,3 @@
-import * as NutUI from './nutui'
-export default NutUI
-export * from './nutui'
+import * as LightUI from './lightui'
+export default LightUI
+export * from './lightui'

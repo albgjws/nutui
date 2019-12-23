@@ -110,7 +110,7 @@ let defaultAction = [
     bgcolor: "#fa3300"
   }
 ];
-module.exports = {
+export default {
   name: "nut-swipe-cell",
   data: function() {
     return {

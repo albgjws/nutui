@@ -70,7 +70,7 @@ module.exports = merge(webpackBaseConf, {
         }),
         new CopyWebpackPlugin([
             {
-                from: path.join(__dirname, "../src/"), to: path.join(__dirname, "../dist/"), ignore: ['demo.vue', 'doc.md', 'config.json', 'nutui.js', '*.spec.js'] }
+                from: path.join(__dirname, "../src/"), to: path.join(__dirname, "../dist/"), ignore: ['demo.vue', 'doc.md', 'config.json', 'lightui.js', '*.spec.js'] }
         ]),
         new CopyWebpackPlugin([
             { from: path.join(__dirname, "../types/"), to: path.join(__dirname, "../dist/types/")}

@@ -2,7 +2,7 @@
     <div>
         <h4>基本用法</h4>
         <div>
-            <lc-cell title="我是标题" desc="描述文字">
+            <lc-cell title="我是标题" desc="描述文字" @LcCellClicked="aa()">
             </lc-cell>
             <lc-cell :showIcon="true" title="我是标题" subTitle="我是副标题" desc="展示默认ICON">
             </lc-cell>
@@ -33,7 +33,11 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    aa(){
+      alert("aa")
+    }
+  },
   mounted() {
         
   }

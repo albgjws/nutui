@@ -63,3 +63,35 @@ export declare class TextInput extends UIComponent {}
 export declare class Avatar extends UIComponent {}
 export declare class Infiniteloading extends UIComponent {}
 export declare class Lazyload extends UIComponent {}
+
+export declare class Keyboard extends UIComponent { }
+export declare class Gridselect extends UIComponent { }
+export declare class Overlay extends UIComponent { }
+export declare class Mask extends UIComponent { }
+export declare class Grid extends UIComponent {}
+export declare class Popup extends UIComponent {}
+export declare class Swiperfull extends UIComponent {}
+export declare class Captchafield extends UIComponent {}
+export declare class Numberfield extends UIComponent {}
+export declare class Passwordfield extends UIComponent {}
+export declare class Textfield extends UIComponent {}
+export declare class Textarea extends UIComponent {}
+export declare class Calendarrow extends UIComponent {}
+export declare class Foldlist extends UIComponent {}
+export declare class Infolist extends UIComponent {}
+export declare class Loading extends UIComponent { }
+export declare class Lazyrender extends UIComponent {}
+export declare class Partloading extends UIComponent { }
+export declare class Marquee extends UIComponent { }
+export declare class Process extends UIComponent { }
+export declare class Processrow extends UIComponent { }
+export declare class Result extends UIComponent { }
+export declare class Tag extends UIComponent { }
+export declare class Tagwall extends UIComponent { }
+export declare class Bank extends UIComponent { }
+export declare class Mapcity extends UIComponent { }
+export declare class Popover extends UIComponent { }
+export declare class Swipecell extends UIComponent { }
+export declare class Tabgroup extends UIComponent { }
+export declare class Epslider extends UIComponent { }
+export declare class Slidermenu extends UIComponent { }

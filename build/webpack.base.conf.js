@@ -84,7 +84,7 @@ module.exports = {
     },
     plugins: [
         new webpack.BannerPlugin({
-            banner: `NutUI v${config.version} - [filebase], [hash], ${moment().format()}
+            banner: `lightui v${config.version} - [filebase], [hash], ${moment().format()}
 (c) 2017-2019 JDC
 Released under the MIT License.`
         }),
@@ -107,10 +107,10 @@ Released under the MIT License.`
             width: 100
         }),
         new WebpackBuildNotifierPlugin({
-            title: "NutUI Webpack Build",        
+            title: "lightui Webpack Build",        
             suppressSuccess: true
         }),
-        new webpack.HotModuleReplacementPlugin(),
+        // new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
     ],
 }

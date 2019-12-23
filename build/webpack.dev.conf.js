@@ -11,8 +11,8 @@ const isDev = process.env.NODE_ENV === 'development';
 module.exports = merge(webpackBaseConf, {
     mode: 'development',
     entry: {
-        'nutui-mobile': './sites/demo/app.js',
-        'nutui-doc': './sites/doc/app.js',
+        'lightui-mobile': './sites/demo/app.js',
+        'lightui-doc': './sites/doc/app.js',
     },
     output: {
         publicPath: '/',
@@ -53,7 +53,7 @@ module.exports = merge(webpackBaseConf, {
             filename: 'demo.html',
             hash: true,//防止缓存
             inject: true,
-            chunks: ['chunks', 'nutui-mobile'],
+            chunks: ['chunks', 'lightui-mobile'],
             minify: {
                 multihtmlCache: true,// 解决多页打包的关键！
                 minifyJS: true,
@@ -84,7 +84,7 @@ module.exports = merge(webpackBaseConf, {
             filename: 'default.html',
             hash: true,//防止缓存
             inject: true,
-            chunks: ['chunks', 'nutui-doc'],
+            chunks: ['chunks', 'lightui-doc'],
             minify: {
                 multihtmlCache: true,// 解决多页打包的关键！
                 minifyJS: true,

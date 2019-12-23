@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Light移动端H5组件库",
   "typings": "dist/types/index.d.ts",
-  "main": "./src/lightui.js",
+  "main": "./dist/lightui.js",
   "files": [
     "dist",
     "README.md",

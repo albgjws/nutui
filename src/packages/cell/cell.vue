@@ -1,6 +1,6 @@
 <template>
     <a :class="['nut-cell',{'nut-cell-link':isLink}]" :href="linkUrl||'javascript:;'" :style="{'background-color':bgColor}">
-        <div class="nut-cell-box">
+        <div class="nut-cell-box" @click="cellClicked">
             <div class="nut-cell-left">
                 <span class="nut-cell-title"><slot name="title">{{title}}</slot></span>
                 <span class="nut-cell-sub-title"><slot name="sub-title">{{subTitle}}</slot></span>
@@ -48,6 +48,10 @@ export default {
   data() {
     return {};
   },
-  methods: {}
+  methods: {
+    cellClicked (e) {
+        this.$emit('LcCellClicked', { e });
+    }
+  }
 };
 </script>

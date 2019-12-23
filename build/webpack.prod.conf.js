@@ -10,19 +10,19 @@ rimraf('./dist/sites/', function (err) {
     if (err) console.log(err);
 });
 
-rimraf('./dist/nutui.js', function (err) {
+rimraf('./dist/lightui.js', function (err) {
     if (err) console.log(err);
 });
 
-rimraf('./dist/nutui.css', function (err) {
+rimraf('./dist/lightui.css', function (err) {
     if (err) console.log(err);
 });
 
-rimraf('./dist/nutui.js.map', function (err) {
+rimraf('./dist/lightui.js.map', function (err) {
     if (err) console.log(err);
 });
 
-rimraf('./dist/nutui.css.map', function (err) {
+rimraf('./dist/lightui.css.map', function (err) {
     if (err) console.log(err);
 });
 
@@ -30,7 +30,7 @@ module.exports = merge(webpackBaseConf, {
     mode: 'production',
     devtool: 'source-map',
     entry: {
-        nutui: './src/nutui.js',
+        lightui: './src/lightui.js',
     },
     externals: {
         'vue': {
@@ -42,8 +42,8 @@ module.exports = merge(webpackBaseConf, {
     },
     output: {
         path: path.resolve(__dirname, '../dist/'),
-        filename: 'nutui.js',
-        library: 'nutui',
+        filename: 'lightui.js',
+        library: 'lightui',
         libraryTarget: 'umd',
         globalObject: 'this',
         umdNamedDefine: true
