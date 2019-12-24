@@ -97,23 +97,23 @@ export default {
 
 <style lang="scss">
 .slider-demo {
-  .lc-cell:first-child {
-    .lc-cell-title {
+  .nut-cell:first-child {
+    .nut-cell-title {
       padding: 0 30px;
     }
   }
 }
-.lc-slider.my-slider {
-  .lc-slider-box {
+.nut-slider.my-slider {
+  .nut-slider-box {
     height: 6px;
     border-radius: 3px;
     background-color: #b6b6b6;
   }
-  .lc-slider-Handle {
+  .nut-slider-Handle {
     border-width: 0;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
     transition: none;
-    &.lc-slider-ani {
+    &.nut-slider-ani {
       border-width: 0;
       box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
     }

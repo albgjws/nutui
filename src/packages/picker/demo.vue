@@ -1,9 +1,9 @@
 <template>
   <div class="demo-list">
-    <nut-noticebar
+    <lc-noticebar
       :closeMode="true"
       v-if="!isMobile"
-    >此 Demo 在 PC 端浏览器与移动端浏览器体验差异较大，建议在 Android 或 iOS 设备上体验。</nut-noticebar>
+    >此 Demo 在 PC 端浏览器与移动端浏览器体验差异较大，建议在 Android 或 iOS 设备上体验。</lc-noticebar>
     <h4>基本用法</h4>
     <div>
       <lc-cell :showIcon="true" :isLink="true" @click.native="switchPicker('isVisible0')">

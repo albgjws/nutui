@@ -121,6 +121,8 @@ body.dialog-open {
     flex: 1;
     justify-content: center;
     overflow: auto;
+    line-height: 20px;
+    max-height: 180px;
     font-size: $font-size-base;
     word-break: break-all;
     padding-bottom: 10px;

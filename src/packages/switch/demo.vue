@@ -68,20 +68,20 @@ export default {
 </script>
 
 <style lang="scss">
-.my-switch.lc-switch {
+.my-switch.nut-switch {
   border-radius: 3px;
   border-color: #ccc;
   background-color:#ccc;
-  .lc-switch-btn {
+  .nut-switch-btn {
     border: 2px solid #fff;
     box-shadow: none;
     background-color: #fff;
     border-radius: 3px;
   }
-  &.lc-switch-active {
+  &.nut-switch-active {
     border-color: #0092e6;
     background-color:#0092e6;
-    .lc-switch-btn {
+    .nut-switch-btn {
       background-color: #fff;
     }
   }

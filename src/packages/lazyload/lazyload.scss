@@ -8,6 +8,10 @@
       height: 220px;
       background-size: 100% 100%;
       background-color: #ddd;
+      img {
+        height: 100%;
+        background-color: #ddd;
+      }
     }
     img[lazy="loading"] {
       /*your style here*/

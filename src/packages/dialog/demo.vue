@@ -71,10 +71,10 @@
       </lc-cell>
     </div>
     <!-- 以标签形式调用Dialog -->
-    <lc-cell title="标签形式调用" :visible="dialogShow" :cancelAutoClose="false" @ok-btn-click="dialogShow=false" @cancel-btn-click="dialogShow=false" @close="dialogShow=false">
+    <lc-dialog  title="标签形式调用" :visible="dialogShow" :cancelAutoClose="false" @ok-btn-click="dialogShow=false" @cancel-btn-click="dialogShow=false" @close="dialogShow=false">
       
       <a href="javascript:;" @click="dialogShow=false" :noCancelBtn="true">点我可以直接关闭对话框</a>
-    </lc-cell>
+    </lc-dialog >
     <lc-actionsheet :is-visible="isEditor" > 
       <div slot="custom"> 
         <lc-cell title="选择货品" :showIcon="true" :isLink="true" @click.native="isItem=true"> 

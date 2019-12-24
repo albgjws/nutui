@@ -66,7 +66,7 @@
                   </div>
                 </div>
             </div>
-            <div class="flex-1 flex-column mt30">
+            <div class="flex-1 flex-column">
               <div class="mb10 align-start">
                   <span class="font-14 m-color-1">{{item.name}}</span>
               </div>
@@ -213,6 +213,7 @@ border-right-color:#3680e9
 .borderR{
 border-right-color:#ee384f
 }
+.mb10{ margin-bottom: 5px; line-height: 20px;}
 
 </style>
 

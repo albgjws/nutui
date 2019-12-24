@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mb15 align-center mt20">
+            <div class="align-center lh20">
                 <span class="font-14 m-color-1">{{item.name}}</span>
             </div>
             <div class="align-center">
@@ -163,6 +163,7 @@ export default {
   height: 1px;
   border-bottom: 1px solid #e8e8e8;
 }
+.lh20{ line-height: 20px;}
 </style>
 
 

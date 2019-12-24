@@ -88,6 +88,7 @@
       display: -webkit-box;
       -webkit-box-orient: vertical;
       font-size: 16px;
+      line-height: 20px;
       overflow: hidden; 
       text-overflow: ellipsis; 
       -webkit-line-clamp: 1;

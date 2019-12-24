@@ -141,7 +141,7 @@ export default {
     display: flex;
     width: 250px;
     height: 36px;
-    padding-top: 3px;
+    align-items: center;
     font-size: 26px;
     color: #333;
   }
