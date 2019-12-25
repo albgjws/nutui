@@ -1,9 +1,9 @@
 <template>
     <div class="lc-demo">
  
-        <lc-title title="滑动菜单"></lc-title>
+        <lc-title title="菜单联动"></lc-title>
             
-        <!-- <category title="滑动菜单"></category> -->
+        <!-- <category title="菜单联动"></category> -->
         <lc-slider-menu :menus="menus"  :menuStyles='menuStyles'></lc-slider-menu>
 
     </div>
