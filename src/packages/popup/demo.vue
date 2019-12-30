@@ -1,7 +1,7 @@
 
 <template>
   <div class="wxc-demo">
-      <lc-title title="遮罩弹层" class="title"></lc-title>
+      <lc-title title="弹出层" class="title"></lc-title>
       <category title="使用案例"></category>
       <div class="button-list">
         <lc-button class="btn-margin" @click="isLeftShow=true">点击弹出左侧面板</lc-button>

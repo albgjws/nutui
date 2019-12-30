@@ -262,10 +262,10 @@
       "name": "Popup",
       "version": "1.0.0",
       "sort": "5",
-      "chnName": "弹层",
+      "chnName": "弹出层",
       "type": "component",
       "showDemo": true,
-      "desc": "弹层",
+      "desc": "弹出层",
       "author": "Ryan"
     },
     {
