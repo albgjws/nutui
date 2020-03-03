@@ -1,12 +1,12 @@
 <template>
     <div class="nut-menu">
-        <transition :name="!isAnimation?'nutFade':''">
+        <transition :name="isAnimation?'nutFade':''">
             <div class="nut-menu-mask"
                 @click="clickMenuMask"
                 v-show="isVisible"
             ></div>
         </transition>
-        <transition :name="!isAnimation?'nutSlideDown':''">
+        <transition :name="isAnimation?'nutSlideDown':''">
             <div class="nut-menu-panel" v-show="isVisible">
                 <div class="menu-simple" v-if="type === 'simple' && !$slots.custom">
                     <ul>
@@ -74,7 +74,7 @@ export default {
     props: {
         isAnimation:{//是否有动画效果
             type:Boolean,
-            default:false
+            default:true
         },
         isVisible:{//是否显示
             type:Boolean,

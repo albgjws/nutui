@@ -41,7 +41,10 @@ export default {
             default: false
         },
         leftIcon: String,
-        color: String,
+        color: {
+            type: String,
+            default: "rgba(211, 125, 066, 1)"
+        },
         background: {
             type: String,
             default: "rgba(254,250,216,1)"

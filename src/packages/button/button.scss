@@ -30,7 +30,7 @@
         color: $primary-color;
     }
 
-    &.red {
+    &.blue {
         background: $btn-default-bg;
         border: $border-width-base solid $primary-color;
         color: $primary-color;
@@ -47,7 +47,7 @@
         border: $border-width-base solid $dark-color;
     }
 
-    &.lightred {
+    &.lightblue {
         background: $btn-label-light-bg;
         color: $title-color;
         border: none;
