@@ -10,7 +10,7 @@
                     {{nutTranslate('lang.shortpassword.tip1')}}
                 </div>
                 <div class="nut-input-w">
-                    <input type="tel" ref="realInput" class="nut-real-input" maxlength="6"  autocomplete="off" autofocus="autofocus" v-model="shortpwdValue" @input="shortpwdInput($event)"/>
+                    <input type="tel" ref="realInput" class="nut-real-input" maxlength="6"  autocomplete="off" v-model="shortpwdValue" @input="shortpwdInput($event)"/>
                     <div class="nut-fake-list" ref="nutFakeList">
                         <ul>
                             <li v-for="item in fakeInputItems" :key="item.id">
