@@ -93,7 +93,7 @@
       },
       width: {
         type: [Number, String],
-        default: 375
+        default: window.screen.width
       },
       transition: {
         type: String,

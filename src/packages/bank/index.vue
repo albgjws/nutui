@@ -125,5 +125,6 @@ export default {
 .icon-check{
     width:20px;
     height: 14px;
+    margin-right: 15px;
 }
 </style>

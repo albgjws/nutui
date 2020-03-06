@@ -29,7 +29,7 @@ export default {
       const styles = {};
       // 去除lighting-ui组件内在小程序运行环境中所有引入的weex环境变量
       // const screenWidth = Utils.env.getScreenWidth();
-      styles.width = `${375 / this.cols}px`;
+      styles.width = `${window.screen.width / this.cols}px`;
       if(this.border){
         styles['border-right'] = '1px solid #D9D9D9';
         styles['border-bottom'] = '1px solid #D9D9D9';

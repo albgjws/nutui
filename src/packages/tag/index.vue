@@ -148,7 +148,7 @@
   .tag-text {
     font-size: 10px;
     height: 11px;
-    line-height: 11px;
+    line-height: 13px;
     padding-left: 3px;
     padding-right: 3px;
   }

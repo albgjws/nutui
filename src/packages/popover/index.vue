@@ -6,6 +6,7 @@
          @click="hideAction"
          :style="coverStyle"></div> -->
       <lc-overlay :show="showIn"
+                  :opacity="opacity"
                   @LcOverlayBodyClicked="hideAction()"
                   :hasAnimation="hasAnimation"></lc-overlay>   
       <transition :name="hasAnimation? transition:''">
@@ -63,9 +64,13 @@ export default {
         opacity: 0.6
       })
     },
-    coverColor: {
-      type: String,
-      default: 'rgba(0, 0, 0, 0.4)'
+    // coverColor: {
+    //   type: String,
+    //   default: 'rgba(0, 0, 0, 0.4)'
+    // },
+    opacity:{
+      type: Number,
+      default: 0.6
     },
     hasAnimation: {
       type: Boolean,

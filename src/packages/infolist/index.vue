@@ -113,7 +113,8 @@
       text-overflow: ellipsis; 
       -webkit-line-clamp: 1; 
       color: #9a9aa6; 
-      margin-top: 10px;
+      margin-top: 5px;
+      line-height: 19px;
   }
   .info-list-time{
       text-align: right;

@@ -107,7 +107,7 @@ const countdownTimer = {
     plainText() {
       const {d, h, m, s} = this.resttime;
 
-      return `${d > 0 && this.showDays? d + '天' + h: h}小时${m}分${s}秒`;
+      return `${d >=0 && this.showDays? d + '天' + h: h}小时${m}分${s}秒`;
     }
   },
   watch: {

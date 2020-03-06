@@ -3,6 +3,7 @@
     <scroll class="left-menu" :data="menus" ref="leftMenu" :style="{width: (menuStyles.width)+'px'}">
         <ul class="left-menu-container">
           <li
+            :style="{height: (menuStyles.height)+'px'}"
             class="left-item"
             ref="leftItem"
             :class="{'current': currentIndex === index}"
@@ -85,7 +86,7 @@ export default {
   },
   methods: {
     selectLeft (index, event) {
-      console.log(index);
+      // console.log(index);
       if (!event._constructed) {
         return
       }
@@ -94,19 +95,19 @@ export default {
       this.$refs.rightMenu.scrollToElement(el, 300)
     },
     scrollHeight (pos) {
-      console.log(pos);
+      // console.log(pos);
       this.scrollY = Math.abs(Math.round(pos.y))
     },
     _calculateHeight() {
       let lis = this.$refs.rightItem;
-      console.log(lis)
+      // console.log(lis)
       let height = 0
       this.rightTops.push(height)
       Array.prototype.slice.call(lis).forEach(li => {
         height += li.clientHeight
         this.rightTops.push(height)
       })
-      console.log(this.rightTops)
+      // console.log(this.rightTops)
     }
   },
   components: {

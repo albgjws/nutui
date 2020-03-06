@@ -59,6 +59,8 @@
     text-overflow: ellipsis;
     width: 70px;
     text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
   }
 </style>
 

@@ -153,6 +153,7 @@ export default {
 .process-icon-div {
   width: 18px;
   height: 18px;
+  z-index: 1;
 }
 .line {
   position: absolute;

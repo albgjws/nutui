@@ -50,7 +50,7 @@
         dataImgItem: Array,
         width: {
             type: [Number, String],
-            default: 375
+            default: window.screen.width
         },
         height: {
             type: [Number, String],
