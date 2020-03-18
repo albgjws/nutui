@@ -173,7 +173,7 @@ export default {
                        let slotElm = slot[i].elm;
                        if(slotElm){
                         this.addClass(slotElm,'hide');
-                            if(this.isShowTab * 2 == i) {
+                            if(this.isShowTab == i) {
                                 this.removeClass(slotElm,'hide')
                             }
                        }                
