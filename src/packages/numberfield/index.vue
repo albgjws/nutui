@@ -5,7 +5,7 @@
         <span class="numberfield-icon-rmb" >￥</span>
     </div>
     <div class="numberfield-input-row">
-      <input ref="input0" class="numberfield-input" type="number" v-if="!formatShow" 
+      <input ref="input0" class="numberfield-input" type="tel" v-if="!formatShow" 
       @blur="numbertBlur" @input="onInput" @focus="numberFocus" v-model="numberValue" 
       :maxlength="maxlength" :placeholder="placeholder" :autofocus="isAutoFocus" singleline="true" />
 
