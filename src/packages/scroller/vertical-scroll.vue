@@ -11,7 +11,7 @@
             <slot name="list"></slot>
             <div class="nut-vert-loadmore" >
                 <template v-if="!isUnMore && isShowLoadMore">
-                    <!-- <div class="nut-vert-load-txt" >{{loadMoreTxt}}</div> -->
+                    <div class="nut-vert-load-txt" >{{loadMoreTxt}}</div>
                     <div class="nut-vert-load-status" v-if="isLoading">
                         <span class="nut-vert-loading"></span>
                         <span class="nut-vert-loading-txt">加载中...</span>
