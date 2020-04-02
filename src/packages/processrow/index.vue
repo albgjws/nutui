@@ -1,18 +1,18 @@
 <template>
     <div class="flex-row process-box">
         <div class="process-main justify-center flex-column" v-for="(item,index) in processList" :key="index">
-            <div class="process-icon align-center" v-if="index==0">
+            <div class="process-icon align-center" v-if="index==0||item.state=='normal'">
                 <div class="line" style="border-bottom-color:#3680e9"></div>
                 <img :src="stepNormal" class="process-icon-div"/>
             </div>
             <div class="process-icon" v-else>
-                <div v-if="item.state=='normal'">
+                <div v-if="item.state=='success'">
                   <div class="line" style="left:0px;"></div>
                   <div class="align-center justify-center">
                       <img :src="stepSuccess" class="process-icon-div"/>
                   </div>
                 </div>
-                <div v-else-if="item.state=='success'">
+                <div v-else-if="item.state=='successDone'">
                   <div class="line" style="left:0px;border-bottom-color:#3680e9"></div>
                   <div class="align-center justify-center">
                       <img :src="stepSuccessDone" class="process-icon-div"/>
