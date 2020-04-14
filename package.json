@@ -1,7 +1,7 @@
 {
-  "name": "@lighting/ui-h5",
+  "name": "@light-module/ui-h5",
   "version": "0.0.1",
-  "description": "Light移动端H5组件库",
+  "description": "Light移动端纯H5组件库",
   "typings": "dist/types/index.d.ts",
   "main": "./dist/lightui.js",
   "files": [
@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jdf2e/nutui.git"
+    "url": ""
   },
   "keywords": [
-    "lighting-ui",
+    "light-ui",
     "vue",
     "webpack",
     "vue component",
