@@ -1,6 +1,6 @@
 {
   "name": "@light-module/ui-h5",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Light移动端纯H5组件库",
   "typings": "dist/types/index.d.ts",
   "main": "./dist/lightui.js",
