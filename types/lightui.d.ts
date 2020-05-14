@@ -95,3 +95,4 @@ export declare class Swipecell extends UIComponent { }
 export declare class Tabgroup extends UIComponent { }
 export declare class Epslider extends UIComponent { }
 export declare class Slidermenu extends UIComponent { }
+export declare class Indexlist extends UIComponent { }

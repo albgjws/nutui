@@ -121,9 +121,11 @@ import Swipecell from "./packages/swipecell/index.js";
 import Tabgroup from "./packages/tabgroup/index.js";
 import Epslider from "./packages/epslider/index.js";
 import Slidermenu from "./packages/slidermenu/index.js";
+import Indexlist from "./packages/indexlist/index.js";
 
 
 const packages = {
+  Indexlist,
   Slidermenu,
   Epslider,
   Tabgroup,

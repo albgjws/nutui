@@ -592,13 +592,23 @@
     },
     {
       "version": "1.0.0",
+      "name": "Indexlist",
+      "sort": "3",
+      "chnName": "索引列表",
+      "desc": "索引列表",
+      "type": "component",
+      "showDemo": true,
+      "author": "苏子刚"
+    },
+    {
+      "version": "1.0.0",
       "name": "Menu",
       "sort": "3",
       "chnName": "菜单",
       "desc": "菜单",
       "type": "component",
       "showDemo": true,
-      "author": "苏子刚"
+      "author": "Ryan"
     },
     {
       "version": "1.0.0",
