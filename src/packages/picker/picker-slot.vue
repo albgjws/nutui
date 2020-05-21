@@ -14,6 +14,8 @@
             <div class="nut-picker-item" v-for="(item,index) in listData"
                 :key="item.label ? item.label : index">{{item.value ? item.value : item}}
             </div>
+            <!-- 210217【light-ui】优化picker组件源码 -->
+            <div class="nut-picker-placeholder" v-if="listData && listData.length === 1"></div>
         </div>
     </div>
     <div class="nut-picker-mask"></div>
@@ -75,11 +77,9 @@ export default {
                 }, 10); 
             } 
         },
-
         setRollerStyle(index) {
             return `transform: rotate3d(1, 0, 0, ${-this.rotation * index}deg) translate3d(0px, 0px, 104px)`;
         },
-
         isHidden(index) {
             if (index >= this.currIndex + 8 || index <= this.currIndex - 8) {
                 return true;
@@ -87,7 +87,6 @@ export default {
                 return false;
             }
         },
-
         setTransform(translateY = 0, type, time = 1000, deg) {
             if (type === 'end') {
                 this.$refs.list.style.webkitTransition = `transform ${time}ms cubic-bezier(0.19, 1, 0.22, 1)`;
@@ -100,7 +99,6 @@ export default {
             this.$refs.roller.style.webkitTransform = `rotate3d(1, 0, 0, ${deg})`;
             this.scrollDistance = translateY;
         },
-
         setMove(move, type, time) {
             let updateMove = move + this.transformY;
             if (type === 'end') {
@@ -111,7 +109,6 @@ export default {
                 if (updateMove < -(this.listData.length - 1) * this.lineSpacing) {
                     updateMove = -(this.listData.length - 1) * this.lineSpacing;
                 }
-
                 // 设置滚动距离为lineSpacing的倍数值
                 let endMove = Math.round(updateMove / this.lineSpacing) * this.lineSpacing;
                 let deg = `${(Math.abs(Math.round(endMove / this.lineSpacing)) + 1) * this.rotation}deg`;
@@ -119,7 +116,6 @@ export default {
                 this.timer = setTimeout(() => {
                     this.setChooseValue(endMove);
                 }, time / 2); 
-
                 this.currIndex = (Math.abs(Math.round(endMove/ this.lineSpacing)) + 1);
             } else {
                 let deg = '0deg';
@@ -133,39 +129,31 @@ export default {
                 this.currIndex = (Math.abs(Math.round(updateMove/ this.lineSpacing)) + 1);
             }
         },
-
         setChooseValue(move) {
             this.$emit('chooseItem', this.listData[(Math.round(-move / this.lineSpacing))], this.keyIndex);
         },
 	
 	    touchStart(event) {
             event.preventDefault();
-
             let changedTouches = event.changedTouches[0];
             this.touchParams.startY = changedTouches.pageY;
             this.touchParams.startTime = event.timestamp || Date.now();
             this.transformY = this.scrollDistance;
         },
-
         touchMove(event) {
             event.preventDefault();
-
             let changedTouches = event.changedTouches[0];
             this.touchParams.lastY = changedTouches.pageY;
             this.touchParams.lastTime = event.timestamp || Date.now();
             let move = this.touchParams.lastY - this.touchParams.startY;
-
             this.setMove(move);
         },
-
         touchEnd(event) {
             event.preventDefault();
-
             let changedTouches = event.changedTouches[0];
             this.touchParams.lastY = changedTouches.pageY;
             this.touchParams.lastTime = event.timestamp || Date.now();
             let move = this.touchParams.lastY - this.touchParams.startY;
-
             let moveTime = this.touchParams.lastTime - this.touchParams.startTime;
             if (moveTime <= 300) {
                 move = move * 2;
@@ -175,7 +163,6 @@ export default {
                 this.setMove(move, 'end');
             }
         },
-
         modifyStatus (type, defaultValue) {
             defaultValue = defaultValue ? defaultValue : this.defaultValue;
             let index = this.listData.indexOf(defaultValue);
@@ -185,7 +172,6 @@ export default {
             this.setMove(-move);
         }
     },
-
     mounted() {
         this.$nextTick(() => {
             this.modifyStatus(true);
@@ -204,4 +190,3 @@ export default {
     }
 }
 </script>
-

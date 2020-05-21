@@ -2,9 +2,10 @@
     <nut-actionsheet :is-visible="isVisible" @close="closeActionSheet">
         <div class="nut-picker" slot="custom" :class="customClassName ? customClassName : null">
             <div class="nut-picker-control">
-                <span class="nut-picker-confirm-btn"  @click="closeActionSheet">{{nutTranslate('lang.cancelBtnTxt')}}</span>
+                <!-- 210217【light-ui】优化picker组件源码 -->
+                <span class="nut-picker-cancel-btn"  @click="closeActionSheet">{{nutTranslate('lang.cancelBtnTxt')}}</span>
                 <div class="nut-picker-title">{{title ? title : ''}}</div>
-                <span class="nut-picker-cancel-btn" @click="confirm">{{nutTranslate('lang.okBtnTxt')}}</span>
+                <span class="nut-picker-confirm-btn" @click="confirm">{{nutTranslate('lang.okBtnTxt')}}</span>
             </div>
             <div class="nut-picker-panel">
                 <template v-for="(item, index) of listData" >
@@ -22,7 +23,6 @@
     </nut-actionsheet>
 </template>
 <script>
-
 import nutactionsheet from "../actionsheet/actionsheet.vue";
 import "../actionsheet/actionsheet.scss";
 import nutpickerslot from "./picker-slot.vue";
@@ -74,22 +74,20 @@ export default {
         updateChooseValue(self, index, value) {
             self.cacheValueData.splice(index, 1, value);
             let ref = `picer-slot-${index}`;
-            self.$refs[ref][0].updateTransform(value);
+            // 210217 【light-ui】优化picker组件源码
+            self.$refs[ref] && self.$refs[ref][0].updateTransform(value);
         },
-
         closeActionSheet() {
             this.isUpdate = !this.isUpdate;
             this.cacheValueData = [...this.chooseValueData];
             this.$emit('close');
             this.$emit('close-update', this, this.chooseValueData);
         },
-
         confirm() {
             this.$emit('confirm', this.cacheValueData);
             this.chooseValueData = [...this.cacheValueData];
             this.$emit('close');
         },
-
         chooseItem(value, index) {
             if (this.cacheValueData[index] !== value) {
                 this.cacheValueData[index] = value;
