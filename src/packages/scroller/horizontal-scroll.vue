@@ -1,5 +1,5 @@
 <template>
-    <div class="nut-hor-scroll" rel="wrapper">
+    <div class="nut-hor-scroll" ref="wrapper">
         <div class="nut-hor-list" ref="list">
             <slot name="list"></slot>
 	         <div class="nut-hor-control" v-if="$slots.more && isShowLoadMore">
@@ -16,6 +16,22 @@ export default {
         stretch: {
             type: Number,
             default: 40
+        },
+        scrollTo: {
+            type: Number,
+            default: 1
+        },
+	    listWidth: {
+            type: Number,
+            default: 0
+        }
+    },
+    watch: {
+        'scrollTo': function(val) {
+            if (typeof val === 'number' && !isNaN(val) && val <= 0 ) {
+                this.setTransform(val, null, 500);
+                this.$emit('scrollToCbk');
+            }
         }
     },
     data() {
@@ -37,7 +53,10 @@ export default {
     },
     methods: {
         isShow() {
-            let wrapH = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            let wrapH = this.listWidth ? this.listWidth : 
+                (window.innerWidth ||
+                document.documentElement.clientWidth ||
+                document.body.clientWidth);
             let listH = this.$refs.list.offsetWidth;
             if (wrapH <= listH) {
                 this.isShowLoadMore =  true;
@@ -57,10 +76,12 @@ export default {
             this.$refs.list.style.webkitTransform = `translate3d(${translateX}, 0, 0)`;
             
         },
-
         setMove(move, type, time) {
             let updateMove = move + this.transformX;
-            let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            let w = this.listWidth ? this.listWidth :
+                (window.innerWidth ||
+                document.documentElement.clientWidth ||
+                document.body.clientWidth);
             let offsetWidth = this.$refs.list.offsetWidth;
             if (type === 'end') {
                 if (updateMove > 0) {
@@ -90,62 +111,62 @@ export default {
 	
 	    touchStart(event) {
             // event.preventDefault();
-
             let changedTouches = event.changedTouches[0];
             this.touchParams.startX = changedTouches.pageX;
             this.touchParams.startY = changedTouches.pageY;
             this.touchParams.startTime = event.timestamp || Date.now();
             this.transformX = this.scrollDistance;
         },
-
         touchEvent(changedTouches, callback) {
             this.touchParams.lastX = changedTouches.pageX;
             this.touchParams.lastY = changedTouches.pageY;
             let moveY = this.touchParams.lastY - this.touchParams.startY;
             let move = this.touchParams.lastX - this.touchParams.startX;
-
             if (!(Math.abs(move) > 20 && Math.abs(move) > Math.abs(moveY))) {
                 return false;
             } else {
-                let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                let w = this.listWidth ? this.listWidth :
+                    (window.innerWidth ||
+                    document.documentElement.clientWidth ||
+                    document.body.clientWidth);
                 let maxMove = -this.$refs.list.offsetWidth + w;
                 callback && callback(move, maxMove, moveY);
             }
         },
-
         touchMove(event) {
-            event.preventDefault();
+            //event.preventDefault();
             let changedTouches = event.changedTouches[0];
             this.touchParams.lastTime = event.timestamp || Date.now();
             let moveTime = this.touchParams.lastTime - this.touchParams.startTime;
             this.touchEvent(changedTouches, (move, maxMove, moveY) => {
+                event.preventDefault();
+                if (event.cancelable) {
+                    event.preventDefault();
+                }
                 if (move > 0 && this.isFirstShow) {
                     this.isFirstShow = false;
                 }
                 this.setMove(move);
             });
         },
-
         touchEnd(event) {
-            let changedTouches = event.changedTouches[0];
+            event.stopPropagation();
+            let changedTouches = event.changedTouches[0];       
             this.touchParams.lastTime = event.timestamp || Date.now();
             let moveTime = this.touchParams.lastTime - this.touchParams.startTime;
             this.touchEvent(changedTouches, (move, maxMove) => {
                 //if (moveTime <= 300) {
                 if (Math.abs(move) > 100) {
-                    move = move * 2;
+                   move = move * 1.5;
                 }
-
                 // 释放跳转之类
                 if (move < 0 && (move + this.transformX) < maxMove - 20 && this.isFirstShow) {
                     this.$emit('jump');
                 }
-
                 if (!this.isFirstShow && move < 0 && move + this.transformX < maxMove && this.$slots.more) {
                     this.isFirstShow = true;
                     //move = maxMove - this.transformX;
                 }
-
                 if (moveTime <= 300 ) {
                     moveTime = moveTime + 500;
                     this.setMove(move, 'end', moveTime);
@@ -155,7 +176,6 @@ export default {
             });
         }
     },
-
     mounted() {
         this.$nextTick(() => {
             this.isShow();
@@ -174,4 +194,3 @@ export default {
     }
 }
 </script>
-

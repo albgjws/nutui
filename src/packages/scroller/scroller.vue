@@ -1,5 +1,6 @@
 <template>
     <div class="nut-scroller">
+         <!-- 210551	【TS:202005250196-银行与产业业委会(企业金融事业部)_喻攀-lightui-scroller组件，下拉刷新，出现卡顿】 -->
         <template v-if="type === 'vertical'">
             <nut-vert-scroll 
                 :stretch="stretch"
@@ -9,15 +10,24 @@
                 :pulldown-txt="pulldownTxt"
                 :load-more-txt="loadMoreTxt"
                 :unload-more-txt="unloadMoreTxt"
+                :props-time="propsTime"
+                :scroll-to="scrollTo"
                 @loadMore="loadMore"
                 @pulldown="pulldown"
+                @scrollToCbk="scrollToCbk"
+                @scrollChange="scrollChange"
             >
                 <slot name="list"  slot="list"></slot>
 
             </nut-vert-scroll>
         </template>
         <template v-else-if="type === 'horizontal'">
-            <nut-hor-scroll :stretch="stretch" @jump="jump">
+            <nut-hor-scroll 
+            :stretch="stretch" 
+            :scroll-to="scrollTo"
+            @jump="jump" 
+            @scrollToCbk="scrollToCbk"
+        >
                 <slot name="list"  slot="list"></slot>
                 <slot name="more"  slot="more"></slot>
                 <slot name="arrow" slot="arrow"></slot>
@@ -62,6 +72,14 @@ export default {
         unloadMoreTxt: {
             type: String,
             default: '没有更多了'
+        },
+        propsTime: {
+            type:Number,
+            default: 0
+        },
+        scrollTo: {
+            type: Number,
+            default: 1
         }
     },
     data() {
@@ -75,13 +93,17 @@ export default {
         loadMore() {
             this.$emit('loadMore');
         },
-
         jump() {
             this.$emit('jump');
         },
-
         pulldown() {
             this.$emit('pulldown');
+        },
+        scrollToCbk() {
+            this.$emit('scrollToCbk');
+        },
+        scrollChange(event){
+            this.$emit('scrollChange',event);
         }
     }
 }
